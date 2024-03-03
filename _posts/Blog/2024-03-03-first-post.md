@@ -5,13 +5,13 @@ excerpt: "Jekyll로 깃허브 블로그를 만들어 보았다."
 categories:
   - Blog
 tags:
-  - [Blog, jekyll, Github, Git, minimal-mistake]
+  - [blog, jekyll, github]
 
 toc: true
 toc_sticky: true
  
-date: 2020-05-23
-last_modified_at: 2020-05-25
+date: 2024-03-03
+last_modified_at: 2024-03-03
 ---
 
 🎀 [jekyll 한글 문서 페이지](https://jekyllrb-ko.github.io/) 🎀 를 참고하였다.
