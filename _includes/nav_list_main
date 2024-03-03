@@ -10,11 +10,52 @@
                         style="font-family:'Cafe24Oneprettynight';">개</style>
         </li>
         <li>
-            <span class="nav__sub-title">Test</span>
+            <span class="nav__sub-title">CS</span>
             <ul>
                 {% for category in site.categories %}
-                {% if category[0] == "Blog" %}
-                <li><a href="/categories/blog" class="">Blog Dev ({{category[1].size}})</a></li>
+                {% if category[0] == "Paper" %}
+                <li><a href="/categories/paper" class="">Paper Review ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "ML Basics" %}
+                <li><a href="/categories/ml-basics" class="">ML Basics ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "Web" %}
+                <li><a href="/categories/web" class="">Web ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </li>
+        <li>
+            <span class="nav__sub-title">Statistics</span>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "Linear Algebra" %}
+                <li><a href="/categories/la" class="">Linear Algebra ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "Mathematical Statistics" %}
+                <li><a href="/categories/ms" class="">Mathematical Statistics ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </li>
+        <li>
+            <span class="nav__sub-title">Medicine</span>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "Medicine" %}
+                <li><a href="/categories/medicine" class="">Paper Review ({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>

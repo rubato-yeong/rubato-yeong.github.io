@@ -4,11 +4,11 @@
 
 /* Colors */
 $background-color: #ffffff !default;
-$text-color: rgb(7, 7, 7) !default;
+$text-color: #000000 !default;
 $primary-color: #000000 !default;
 
 $border-color: mix(#000, $background-color, 20%) !default;
-$code-background-color: #f0f0f0;
+$code-background-color: #f5f5f5;
 $code-background-color-dark: rgba(185, 185, 185, 0.25) !default;
 
 $mark-highlight-color: rgba($primary-color, 0.15) !default;
@@ -33,7 +33,7 @@ $yiq-contrasted-threshold: 175 !default;
 $yiq-debug: false !default;
 
 /* plum syntax highlighting (base16) */
-$base00: #f0f0f0 !default;
+$base00: #f5f5f5 !default;
 $base01: #e0e0e0 !default;
 $base02: #d0d0d0 !default;
 $base03: #b0b0b0 !default;

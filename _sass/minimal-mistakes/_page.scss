@@ -419,8 +419,8 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    color: mix(#fff, $primary-color, 60%);
-    text-decoration: none;
+    color: mix(#fff, $primary-color, 25%);
+    text-decoration: bold;
     border-bottom: 1px solid $border-color;
     font-family: $serif;
   }
