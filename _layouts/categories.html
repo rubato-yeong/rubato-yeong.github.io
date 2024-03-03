@@ -41,6 +41,7 @@ layout: archive
         <small>
           <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>{{ post.date | date: " %Y.%m.%d" }}
           {% if site.category_archive.type and post.categories[0] and site.tag_archive.type and post.tags[0] %}
+          &nbsp;|&nbsp;
           {%- include post__taxonomy.html -%}
           {% endif %}
         </small>
@@ -48,8 +49,6 @@ layout: archive
     </article>
     {% endfor %}
   </div>
-  <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }}
-    &uarr;</a>
 </section>
 {% endif %}
 {% endfor %}

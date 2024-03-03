@@ -589,9 +589,9 @@ ko: &DEFAULT_KO
   pagination_next            : "다음"
   breadcrumb_home_label      : "Home"
   breadcrumb_separator       : "/"
-  menu_label                 : "카테고리 Click"
+  menu_label                 : "Click"
   search_label               :
-  toc_label                  : "목차"
+  toc_label                  : "Index"
   ext_link_label             : "직접 링크"
   less_than                  : "최대"
   minute_read                : "분 소요"
