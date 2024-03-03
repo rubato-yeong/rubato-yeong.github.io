@@ -40,7 +40,7 @@
   (facebook, $facebook-color),
   (twitter, $twitter-color),
   (linkedin, $linkedin-color),
-  (copyUrl, #00afaf);
+  (copyUrl, mix(#fff, #00adb5, 30%));
 
   @each $buttoncolor, $color in $buttoncolors {
     &--#{$buttoncolor} {

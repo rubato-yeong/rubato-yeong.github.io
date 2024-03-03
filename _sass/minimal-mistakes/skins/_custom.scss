@@ -8,15 +8,15 @@ $text-color: rgb(7, 7, 7) !default;
 $primary-color: #000000 !default;
 
 $border-color: mix(#000, $background-color, 20%) !default;
-$code-background-color: rgba(240, 240, 240, 0.5);
+$code-background-color: #f0f0f0;
 $code-background-color-dark: rgba(185, 185, 185, 0.25) !default;
 
 $mark-highlight-color: rgba($primary-color, 0.15) !default;
 $block-quote-background-color: rgba($primary-color, 0.1) !default;
 $form-background-color: rgba(255, 255, 255, 0.527) !default;
 $footer-background-color: mix(#000, $background-color, 3%) !default;
-$link-color: mix(#00adb5, $text-color, 40%) !default;
 
+$link-color: #00adb5 !default;
 $link-color-hover: mix($link-color, $background-color, 70%) !default;
 $link-color-visited: $link-color !default;
 
@@ -33,7 +33,7 @@ $yiq-contrasted-threshold: 175 !default;
 $yiq-debug: false !default;
 
 /* plum syntax highlighting (base16) */
-$base00: #fafafa !default;
+$base00: #f0f0f0 !default;
 $base01: #e0e0e0 !default;
 $base02: #d0d0d0 !default;
 $base03: #b0b0b0 !default;

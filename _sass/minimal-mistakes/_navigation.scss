@@ -550,8 +550,8 @@
 
   .nav__title {
     color: #fff;
-    font-size: $type-size-5;
-    background: mix(#fff, $primary-color, 30%);
+    font-size: $type-size-6;
+    background: mix(#fff, #00adb5, 20%);
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
   }
@@ -567,10 +567,10 @@
   padding: 0;
   width: 100%;
   list-style: none;
-  font-size: $type-size-5;
+  font-size: $type-size-6;
 
   @include breakpoint($large) {
-    font-size: $type-size-5;
+    font-size: $type-size-6;
   }
 
   a {
@@ -588,22 +588,26 @@
 
   li ul>li a {
     padding-left: 1.25rem;
-    font-weight: normal;
+    color: rgba($muted-text-color, 0.8);
   }
 
   li ul li ul>li a {
     padding-left: 1.75rem;
+    color: rgba($muted-text-color, 0.8);
   }
 
   li ul li ul li ul>li a {
     padding-left: 2.25rem;
+    color: rgba($muted-text-color, 0.8);
   }
 
   li ul li ul li ul li ul>li a {
     padding-left: 2.75rem;
+    color: rgba($muted-text-color, 0.8);
   }
 
   li ul li ul li ul li ul li ul>li a {
-    padding-left: 3.25rem
+    padding-left: 3.25rem;
+    color: rgba($muted-text-color, 0.8);
   }
 }
