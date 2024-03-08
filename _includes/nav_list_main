@@ -20,6 +20,13 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
+                {% if category[0] == "Lecture" %}
+                <li><a href="/categories/lecture" class="">Lecture Review ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                 {% if category[0] == "ML Basics" %}
                 <li><a href="/categories/ml-basics" class="">ML Basics ({{category[1].size}})</a></li>
                 {% endif %}
