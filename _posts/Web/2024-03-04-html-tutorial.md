@@ -14,6 +14,8 @@ date: 2024-03-04
 last_modified_at: 2024-03-04
 ---
 
+---
+
 💡 이 글은 <a href="https://wikidocs.net/book/7596" target="_blank">입문자를 위한 HTML5</a>를 참고하여 공부하면서 핵심만 짧게 요약한 문서입니다.
 {: .notice--info}
 
