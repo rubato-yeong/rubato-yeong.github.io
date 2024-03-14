@@ -10,21 +10,24 @@
                         style="font-family:'Cafe24Oneprettynight';">개</style>
         </li>
         <li>
+            <span class="nav__sub-title">Generation</span>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "Generation" %}
+                <li><a href="/categories/generation" class="">Paper Review ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "CS236n" %}
+                <li><a href="/categories/cs236n" class="">CS236n: Deep Generative Models ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </li>
+        <li>
             <span class="nav__sub-title">CS</span>
-            <ul>
-                {% for category in site.categories %}
-                {% if category[0] == "Paper" %}
-                <li><a href="/categories/paper" class="">Paper Review ({{category[1].size}})</a></li>
-                {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                {% if category[0] == "Lecture" %}
-                <li><a href="/categories/lecture" class="">Lecture Review ({{category[1].size}})</a></li>
-                {% endif %}
-                {% endfor %}
-            </ul>
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "ML Basics" %}

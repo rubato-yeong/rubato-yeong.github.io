@@ -1,7 +1,7 @@
 ---
-title: "CS Lecture Review"
+title: "Generation Paper Review"
 layout: archive
-permalink: categories/lecture
+permalink: categories/generation
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ***
 
-{% assign posts = site.categories.Lecture %}
+{% assign posts = site.categories.Generation %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
