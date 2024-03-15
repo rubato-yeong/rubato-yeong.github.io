@@ -21,7 +21,7 @@
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "CS236n" %}
-                <li><a href="/categories/cs236n" class="">CS236n: Deep Generative Models ({{category[1].size}})</a></li>
+                <li><a href="/categories/cs236n" class="">[CS236n] Deep Generative Models ({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
