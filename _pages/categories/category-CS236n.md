@@ -1,7 +1,7 @@
 ---
 title: "[CS236n] Deep Generative Models"
 layout: archive
-permalink: categories/cs236n
+permalink: categories/CS236n
 author_profile: true
 sidebar_main: true
 ---
