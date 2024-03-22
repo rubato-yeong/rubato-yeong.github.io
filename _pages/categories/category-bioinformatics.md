@@ -1,7 +1,7 @@
 ---
-title: "Medicine"
+title: "Bioinformatics"
 layout: archive
-permalink: categories/medicine
+permalink: categories/bioinformatics
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ***
 
-{% assign posts = site.categories.Medicine %}
+{% assign posts = site.categories.Bioinformatics %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}

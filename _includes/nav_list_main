@@ -71,8 +71,8 @@
             <span class="nav__sub-title">Medicine</span>
             <ul>
                 {% for category in site.categories %}
-                {% if category[0] == "Medicine" %}
-                <li><a href="/categories/medicine" class="">Paper Review ({{category[1].size}})</a></li>
+                {% if category[0] == "Bioinformatics" %}
+                <li><a href="/categories/bioinformatics" class="">Bioinformatics ({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
