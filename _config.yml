@@ -20,7 +20,7 @@ title                    : "Blog by rubatoyeong"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "rubatoyeong"
-description              : "Medicine & Computer Science"
+description              : "Find Directions"
 url                      : "https://rubato-yeong.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "rubato-yeong/comments" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
