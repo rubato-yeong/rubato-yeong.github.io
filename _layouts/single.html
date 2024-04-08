@@ -78,8 +78,8 @@ classes: default
             site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
 
         <p></p>
-        <h4 class="page__meta-title"><span style="font-family:'Coming Soon'; color:#4D5357;">{{ page.categories[0]
-            }}</span> <span style="font-family:'Cafe24Oneprettynight';">카테고리 내 다른 글 보러가기</span></h4>
+        <h4 class="page__meta-title"><span style="font-family:'Pretendard-Regular';">{{ page.categories[0]
+            }}</span> <span style="font-family:'Pretendard-Regular';">카테고리 내 다른 글 보러가기</span></h4>
         {% include post_pagination.html %}
         <p></p>
 
@@ -101,7 +101,7 @@ classes: default
   {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
   {% if page.id and page.related and site.related_posts.size > 0 %}
   <div class="page__related"> <!--site.data.ui-text[site.locale].related_label-->
-    <h4 class="page__related-title">{{ "최근 글 10 개 :)" }}</h4>
+    <h4 class="page__related-title">{{ "최근 글 보기" }}</h4>
     {% for post in site.related_posts limit:10 %}
     {% include archive-single3.html %}
     {% endfor %}
@@ -109,7 +109,7 @@ classes: default
   {% comment %}<!-- otherwise show recent posts if no related when `related: true` -->{% endcomment %}
   {% elsif page.id and page.related %}
   <div class="page__related">
-    <h4 class="page__related-title">{{ "최근 글" }}</h4>
+    <h4 class="page__related-title">{{ "최근 글 보기" }}</h4>
     <div class="grid__wrapper">
       {% for post in site.posts limit:3 %}
       {% if post.id == page.id %}

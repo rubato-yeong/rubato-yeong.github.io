@@ -142,7 +142,7 @@
 
     .prev_next {
       font-family: $cute;
-      color: #ffd861;
+      color: #00adb5;
     }
 
     &:hover {
@@ -471,7 +471,7 @@
 
   a {
     color: inherit;
-    font-size: $type-size-3;
+    font-size: $type-size-4;
     font-family: $cute;
     color: mix(#fff, $primary-color, 10%);
 
@@ -528,7 +528,7 @@
   display: block;
   margin: 0.5rem 0;
   padding: 0.25rem 0;
-  font-size: $type-size-3;
+  font-size: $type-size-4;
   font-family: $serif;
   color: $primary-color;
   border-bottom: 1px solid $border-color;
@@ -567,10 +567,10 @@
   padding: 0;
   width: 100%;
   list-style: none;
-  font-size: $type-size-6;
+  font-size: $type-size-7;
 
   @include breakpoint($large) {
-    font-size: $type-size-6;
+    font-size: $type-size-7;
   }
 
   a {
