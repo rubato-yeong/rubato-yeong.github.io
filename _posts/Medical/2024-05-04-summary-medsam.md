@@ -55,7 +55,7 @@ SAM은 굉장히 무거운 image encoder를 사용하여 하나의 image embeddi
 
 ## 1.2. SAM in Medical Domain
 
-그러나 이러한 foundation model은 natural image에 대한 segmentation task에 대해 훌륭한 성능을 보이지만, **medical image에 대한 segmentation task에 대해서는 성능이 좋지 않다**. 이는 medical image의 특성상 natural image와는 다른 특성을 가지고 있기 때문이다.
+이러한 foundation model은 natural image에 대한 segmentation task에 대해 훌륭한 성능을 보이지만, **medical image에 대한 segmentation task에 대해서는 성능이 좋지 않다**. Medical image의 특성상 natural image와는 다른 특성을 가지고 있기 때문이다.
 
 <p align="center">
   <img src="https://github.com/rubato-yeong/rubato-yeong.github.io/assets/78250557/daeb3bb4-6f03-4026-9ead-43fe63aa5bdd">
@@ -81,9 +81,9 @@ SAM은 굉장히 무거운 image encoder를 사용하여 하나의 image embeddi
 
 데이터셋은 총 **1.6M개의 image-mask pair**를 사용하였다. 구체적으로 데이터셋을 보면 **대부분이 MRI, CT 이미지**이고, 그 다음으로는 Endoscopy, US, X-ray 등이 있다. Endoscopy, US, X-ray는 2D 이미지이기 때문에 MedSAM에 적합하다. 그러나 MRI, CT는 3D 이미지이기 때문에 MedSAM에 바로 input으로 넣을 수 없고, **2D slice의 형태로 변환하여 사용**한다. 개인적으로는 이 부분이 **치명적인 단점**이라고 생각한다. 2D slice로 정보를 처리하게 되면 **3D image에서 얻을 수 있는 correlation을 잃게 되기 때문**이다. MRI와 CT 이미지의 수가 대부분을 차지하는 이유 중에는 3D image를 2D slice로 만들면서 이미지의 수가 늘어나기 때문인 부분도 있을 것이다.
 
-한편 input shape에 대해 의문이 생길 수도 있다. Endoscopy와 같은 이미지는 RGB 3 channel을 가지고 있고, CT, MRI, X-ray와 같은 이미지는 grayscale이기 때문이다. 이 문제를 해결하기 위해 2D image의 경우는 모두 png 파일로 변환하여 **3 channel로 강제 변환**하였고, CT나 MRI의 경우 2D slice로 만든 뒤 **channel을 3번 반복**하는 방식을 사용하였다.
+Input shape에 대해 의문이 생길 수도 있다. Endoscopy와 같은 이미지는 RGB 3 channel을 가지고 있고, CT, MRI, X-ray와 같은 이미지는 grayscale이기 때문이다. 이 문제를 해결하기 위해 2D image의 경우는 모두 png 파일로 변환하여 **3 channel로 강제 변환**하였고, CT나 MRI의 경우 2D slice로 만든 뒤 **channel을 3번 반복**하는 방식을 사용하였다.
 
-한편 모델의 구조는 완전히 SAM과 동일하다. 다만 **prompt는 bounding box로 한정**하였는데, 이는 medical image는 정확한 segmentation을 수행하는 것이 생명이다 보니 point, text 등의 prompt는 비교적 부정확한 결과를 가져온다고 판단했기 때문인 것으로 보인다. SAM과 동일한 구조를 사용한 것은 **fine-tuning을 간단히 수행**하기 위함이다.
+모델의 구조는 완전히 SAM과 동일하다. 다만 **prompt는 bounding box로 한정**하였는데, 이는 medical image는 정확한 segmentation을 수행하는 것이 생명이다 보니 **point, text 등의 prompt는 비교적 부정확한 결과를 가져온다고 판단**했기 때문인 것으로 보인다. SAM과 동일한 구조를 사용한 것은 **fine-tuning을 간단히 수행**하기 위함이다.
 
 <br>
 
@@ -120,6 +120,8 @@ MedSAM에서는 validation을 위해 기존의 natural image를 사용한 **SAM*
 <p align="center">
   <img src="https://github.com/rubato-yeong/rubato-yeong.github.io/assets/78250557/bd7c6e15-2df5-4bfe-9066-4662b3dab377">
 </p>
+
+<br>
 
 ## 3.2. Results
 
