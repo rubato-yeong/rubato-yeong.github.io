@@ -8,6 +8,13 @@
             <span class="nav__sub-title">Paper/Study</span>
             <ul>
                 {% for category in site.categories %}
+                {% if category[0] == "Language" %}
+                <li><a href="/categories/language" class="">Language ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                 {% if category[0] == "Generation" %}
                 <li><a href="/categories/generation" class="">Generation ({{category[1].size}})</a></li>
                 {% endif %}
