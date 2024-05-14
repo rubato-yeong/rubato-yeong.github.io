@@ -228,9 +228,9 @@ $$
 \mathcal{L} (\phi) = - \mathbb{E} _ {(x, y_ w, y_ l) \sim \mathcal{D}} \left[ \log \sigma \left( \beta \log \frac{\pi ^ \text{RL} _ \phi (y_ w \vert x)}{\pi ^ \text{REF} (y_ w \vert x)} - \beta \log \frac{\pi ^ \text{RL} _ \phi (y_ l \vert x)}{\pi ^ \text{REF} (y_ l \vert x)} \right) \right]
 $$
 
-![image](https://github.com/rubato-yeong/rubato-yeong.github.io/assets/78250557/531f2d48-7226-45cb-97ae-f3144385076d){: .align-center}
+데이터로는 아래와 같은 것들을 사용할 수 있다.
 
-데이터로는 위와 같은 것들을 사용할 수 있다.
+![image](https://github.com/rubato-yeong/rubato-yeong.github.io/assets/78250557/531f2d48-7226-45cb-97ae-f3144385076d){: .align-center}
 
 * **RLHF**
   * [19'] **RLHF**: Fine-Tuning Language Models from Human Preferences
@@ -327,6 +327,8 @@ MLLM 연구는 아직 완벽하지 않고, 여러 가지 연구해야 할 문제
 * **M-ICL과 M-CoT** 관련 연구가 필요하다.
 * MLLM에 기반한 **embodied agent** 개발 관련 연구, 즉 real-world 연구가 각광받고 있다.
 * **Safety issue**에 대해 연구가 필요하다.
+
+<br>
 
 # 💡 Summary
 
