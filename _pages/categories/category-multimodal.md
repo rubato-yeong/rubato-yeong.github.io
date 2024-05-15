@@ -1,7 +1,7 @@
 ---
-title: "Language Model Paper Review"
+title: "Multimodal Model Paper Review"
 layout: archive
-permalink: categories/language
+permalink: categories/multimodal
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ***
 
-{% assign posts = site.categories.Language %}
+{% assign posts = site.categories.Multimodal %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}

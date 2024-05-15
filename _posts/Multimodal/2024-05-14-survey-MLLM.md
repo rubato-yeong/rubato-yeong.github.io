@@ -3,7 +3,7 @@ title:  "[24'] A Survey on Multimodal Large Language Models"
 excerpt: ""
 
 categories:
-  - Language
+  - Multimodal
 tags:
   - [Summary, MLLM]
 
