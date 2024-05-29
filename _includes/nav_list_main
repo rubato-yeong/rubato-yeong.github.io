@@ -22,6 +22,13 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
+                {% if category[0] == "Segmentation" %}
+                <li><a href="/categories/segmentation" class="">Segmentation ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                 {% if category[0] == "Medical" %}
                 <li><a href="/categories/medical" class="">Medical ({{category[1].size}})</a></li>
                 {% endif %}
