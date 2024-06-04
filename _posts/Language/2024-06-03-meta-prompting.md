@@ -105,6 +105,6 @@ last_modified_at: 2024-06-04
 
 # 📃 Reference
 
-* <a href="https://arxiv.org/abs/2403.09611" target="_blank">[24'] Meta-Prompting: Enhancing Language Models with Task-Agnostic Scaffolding</a>
+* <a href="https://arxiv.org/abs/2401.12954" target="_blank">[24'] Meta-Prompting: Enhancing Language Models with Task-Agnostic Scaffolding</a>
 
 <br>
