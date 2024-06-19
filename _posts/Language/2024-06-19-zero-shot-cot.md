@@ -1,5 +1,5 @@
 ---
-title:  "[22' NIPS] Large Language Models are Zero-Shot Reasoners" 
+title:  "[22' NIPS] Zero-shot-CoT: Large Language Models are Zero-Shot Reasoners" 
 excerpt: ""
 
 categories:
