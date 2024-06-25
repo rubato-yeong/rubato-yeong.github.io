@@ -92,6 +92,6 @@ last_modified_at: 2024-06-25
 
 # 📃 Reference
 
-* [[[23'] LLaMA-Adapter V2: Parameter-Efficient Visual Instruction Model](https://arxiv.org/pdf/2304.15010)
+* [[23'] LLaMA-Adapter V2: Parameter-Efficient Visual Instruction Model](https://arxiv.org/pdf/2304.15010)
 
 <br>
