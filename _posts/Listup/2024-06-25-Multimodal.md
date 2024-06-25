@@ -81,6 +81,10 @@ last_modified_at: 2024-06-25
 
 # 📌 LLM-Aided Visual Reasoning
 
+## 1. Segmentation
+
+### LLM-guided Segmentation
+
 * [[24’ CVPR] LISA: Reasoning Segmentation via Large Language Model](https://rubato-yeong.github.io/multimodal/lisa/)
   * Reasoning segmentation task를 제안하고, embedding-as-mask paradigm을 제안해 `<SEG>` token으로 segmentation mask를 예측함
 * [[23’] LISA++: An Improved Baseline for Reasoning Segmentation with Large Language Model](https://rubato-yeong.github.io/multimodal/lisa++/)
@@ -90,6 +94,13 @@ last_modified_at: 2024-06-25
 * [[24’ CVPR] GLaMM: Pixel Grounding Large Multimodal Model](https://rubato-yeong.github.io/multimodal/glamm/)
   * GCG(Grounded Conversation Generation) Task를 제안하고, Visual Prompt를 Input으로 이용할 수 있는 확장된 LISA 모델을 제안함
   * SA-1B dataset을 재가공하여 GCG task에 맞는 거대 데이터셋인 GranD dataset(11M)을 제작함
+
+### Referring Segmentation
+
+* [[22' CVPR] LAVT: Language-Aware Vision Transformer for Referring Image Segmentation](https://rubato-yeong.github.io/multimodal/unilseg/)
+  * Visual Encoder에 Language Attention을 주어 Language-Vision Interaction을 강화하여 RIS Task를 해결함
+* [[23' CVPR] OVSeg: Open-Vocabulary Semantic Segmentation with Mask-adapted CLIP](https://rubato-yeong.github.io/multimodal/unilseg/)
+  * CLIP과 Mask Prompt Tuning을 사용하여 Open-Vocabulary Semantic Segmentation Task를 해결함
 * [[23’ CVPR] GRES: Generalized Referring Expression Segmentation](https://rubato-yeong.github.io/multimodal/gres/)
   * Multi-target, Empty-target expression에 대해 대답해야 하는 GRES Task를 제안하고 이를 해결하기 위한 ReLA 모델을 제시함
 * [[24’ CVPR] GSVA: Generalized Segmentation via Multimodal Large Language Models](https://rubato-yeong.github.io/multimodal/gsva/)
@@ -97,9 +108,15 @@ last_modified_at: 2024-06-25
   * LISA와 같은 LLM-aided segmentation에서의 In-context Learning의 효과를 발견함
 * [[24’ CVPR] UniLSeg: Universal Segmentation at Arbitrary Granularity with Language Instruction](https://rubato-yeong.github.io/multimodal/unilseg/)
   * Various granularity에서 모두 segmentation할 수 있는 universal segmentation model을 제안함
+
+### Few-shot Segmentation
+
 * [[24’ CVPR] LLaFS: When Large Language Models Meet Few-Shot Segmentation](https://rubato-yeong.github.io/multimodal/llafs/)
   * 기존 Few-shot Segmentation을 LLM에서 In-context Learning 방식으로 해석함
   * Region-attribute table을 제안하여 LLM이 이미지를 region-wise attribute로 이해할 수 있도록 함
+
+## 2. Others
+
 * [[24’ CVPR] PixelLLM: Pixel Aligned Language Models](https://rubato-yeong.github.io/multimodal/pixelllm/)
   * VLM의 language token과 함께 LLM이 어디를 보고 있는지에 대한 localization 정보를 제공함
   
