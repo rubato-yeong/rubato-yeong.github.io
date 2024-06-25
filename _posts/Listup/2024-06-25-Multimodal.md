@@ -65,7 +65,8 @@ last_modified_at: 2024-06-25
 * [[24’ CVPR] Eyes Wide Shut? Exploring the Visual Shortcomings of Multimodal LLMs](https://rubato-yeong.github.io/multimodal/eyes-wide-shut/)
   * Visual Encoder의 한계를 지적하며 CLIP-blind pair의 개념을 제안하고 MMVP 데이터셋을 구축함
   * 이를 극복하기 위해 CLIP과 DINOv2를 융합한 I-MoF 모델을 제시함
-* [24' CVPR] VIVL: Towards Better Vision-Inspired Vision-Language Models
+* [[24' CVPR] VIVL: Towards Better Vision-Inspired Vision-Language Models](https://rubato-yeong.github.io/multimodal/vivl/)
+  * VLM에서 Vision-Language Interaction이 부족함을 지적하며 Visual Encoder, Adapter의 Interaction을 강화한 FPE와 DVCP Module을 제시함
 
 <br>
 
