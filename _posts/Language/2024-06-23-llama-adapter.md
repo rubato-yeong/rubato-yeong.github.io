@@ -70,7 +70,7 @@ LLaMA 7B model을 그대로 full fine-tuning하는 것은 비효율적이다. �
 
 # 2. Experiments
 
-# 2.1. Instruction-following Evaluation
+## 2.1. Instruction-following Evaluation
 
 ![image](https://github.com/rubato-yeong/rubato-yeong.github.io/assets/78250557/0114509e-b197-4d9f-825e-ee68817cd977){: .align-center}
 

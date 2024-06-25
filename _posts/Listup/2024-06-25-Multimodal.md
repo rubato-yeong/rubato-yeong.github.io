@@ -54,11 +54,20 @@ last_modified_at: 2024-06-25
 
 ## 3. Visual Encoder & Adapter
 
+* [[24’ ICLR] LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention](https://rubato-yeong.github.io/language/llama-adapter/)
+  * LLaMA에 적용 가능한 Vision-conditioned Prefix Tuning 방법을 제시함
 * [[24’ CVPR] Honeybee: Locality-enhanced Projector for Multimodal LLM](https://rubato-yeong.github.io/multimodal/honeybee/)
   * Locality와 flexibility를 모두 고려한 C-abstractor를 제안함
   * MLLM instruction tuning 데이터셋 제작 및 학습 방법에 대한 최적의 방법을 제시함
 * [[24’ CVPR] Eyes Wide Shut? Exploring the Visual Shortcomings of Multimodal LLMs](https://rubato-yeong.github.io/multimodal/eyes-wide-shut/)
-  * VLM Visual Encoder의 한계를 지적하며 CLIP-blind pair의 개념을 제안하고 MMVP 데이터셋을 구축함
+  * Visual Encoder의 한계를 지적하며 CLIP-blind pair의 개념을 제안하고 MMVP 데이터셋을 구축함
   * 이를 극복하기 위해 CLIP과 DINOv2를 융합한 I-MoF 모델을 제시함
+* [24' CVPR] VIVL: Towards Better Vision-Inspired Vision-Language Models
+
+<br>
+
+# Further Research Topics
+
+* [24' CVPR] REAL: The Neglected Tails in Vision-Language Models
 
 <br>
