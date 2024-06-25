@@ -115,11 +115,21 @@ last_modified_at: 2024-06-25
   * 기존 Few-shot Segmentation을 LLM에서 In-context Learning 방식으로 해석함
   * Region-attribute table을 제안하여 LLM이 이미지를 region-wise attribute로 이해할 수 있도록 함
 
-## 2. Others
+## 2. Localization
 
+* [[23’] Shikra: Unleashing Multimodal LLM’s Referential Dialogue Magic](https://rubato-yeong.github.io/multimodal/shikra/)
+  * Bounding box를 단순 text로 취급하여 Input/Output으로 처리할 수 있는 간단한 아이디어를 제시함
+  * Grounded Conversation, Multimodal Chain-of-Thought의 초기 아이디어로도 볼 수 있음
 * [[24’ CVPR] PixelLLM: Pixel Aligned Language Models](https://rubato-yeong.github.io/multimodal/pixelllm/)
   * VLM의 language token과 함께 LLM이 어디를 보고 있는지에 대한 localization 정보를 제공함
   
+<br>
+
+# 💯 Evaluation and Benchmark
+
+* [[24'] MMStar: Are We on the Right Way for Evaluating Large Vision-Language Models?](https://rubato-yeong.github.io/multimodal/mmstar/)
+  * 기존 VLM Evaluation이 Dataset의 Quality와 Data Leakage 문제로 부정확하다는 것을 지적하고, 이를 해결하기 위한 MMStar Benchmark를 제시함
+
 <br>
 
 # 🎢 Further Research Topics
