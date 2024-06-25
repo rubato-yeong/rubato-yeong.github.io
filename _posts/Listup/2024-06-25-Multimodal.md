@@ -66,8 +66,18 @@ last_modified_at: 2024-06-25
 
 <br>
 
-# Further Research Topics
+# 🤔 Multimodal Chain-of-Thought
 
-* [24' CVPR] REAL: The Neglected Tails in Vision-Language Models
+* [[24’ TMLR] Multimodal Chain-of-Thought Reasoning in Language Models](https://rubato-yeong.github.io/multimodal/mmcot/)
+  * Lightweight multimodal model(1B)에서 reasoning을 수행하는 two-stage framework를 제안함
+* [[24'] Visual CoT: Unleashing Chain-of-Thought Reasoning in Multi-Modal Language Models](https://rubato-yeong.github.io/multimodal/viscot/)
+  * Multimodal LLM에서 bounding box를 예측하는 image reasoning step을 추가한 Visual CoT 모델을 제시함
+
+<br>
+
+# 🎢 Further Research Topics
+
+* [[24' CVPR] REAL: The Neglected Tails in Vision-Language Models](https://rubato-yeong.github.io/multimodal/real/)
+  * VLM의 pretraining data가 long-tailed concept distribution을 보임을 확인하고, 이를 해결하기 위한 REAL-Prompt와 REAL-Linear을 제안함
 
 <br>
