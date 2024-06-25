@@ -5,7 +5,7 @@ excerpt: ""
 categories:
   - Multimodal
 tags:
-  - [VLM, Visual Encoder, Analysis]
+  - [Visual Encoder, Analysis]
 
 toc: true
 toc_sticky: true

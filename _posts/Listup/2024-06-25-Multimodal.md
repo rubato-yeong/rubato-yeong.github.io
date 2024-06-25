@@ -56,6 +56,9 @@ last_modified_at: 2024-06-25
 
 * [[24’ ICLR] LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention](https://rubato-yeong.github.io/language/llama-adapter/)
   * LLaMA에 적용 가능한 Vision-conditioned Prefix Tuning 방법을 제시함
+* [[23'] LLaMA-Adapter V2: Parameter-Efficient Visual Instruction Model](https://rubato-yeong.github.io/multimodal/llama-adapter-v2/)
+  * Visual instruction data 없이 language instruction data와 image-text data를 각각 disjoint parameter에 학습시켜 visual instruction을 효율적으로 학습하는 joint training paradigm을 제시함
+  * 이때 disjoint parameter 학습을 위해 visual knowledge early fusion 방법을 사용함
 * [[24’ CVPR] Honeybee: Locality-enhanced Projector for Multimodal LLM](https://rubato-yeong.github.io/multimodal/honeybee/)
   * Locality와 flexibility를 모두 고려한 C-abstractor를 제안함
   * MLLM instruction tuning 데이터셋 제작 및 학습 방법에 대한 최적의 방법을 제시함

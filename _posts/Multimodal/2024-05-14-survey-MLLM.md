@@ -5,7 +5,7 @@ excerpt: ""
 categories:
   - Multimodal
 tags:
-  - [Summary, MLLM]
+  - [Summary]
 
 toc: true
 toc_sticky: true
