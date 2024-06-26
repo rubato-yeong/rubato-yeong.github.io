@@ -53,6 +53,8 @@ Medical domain에서 정말 중요한 부분이 **dataset**이다. 어떤 datase
 
 저자들은 **VQA-Rad**, **PathVQA**, **Visual USMLE** 데이터셋을 사용해 실험을 진행했다. 결과적으로, Med-Flamingo는 VQA-Rad에서는 원하는 성능을 얻었지만 나머지에서는 그렇지 못했다. 저자들은 각각의 이유를 다음과 같이 설명한다. (1) PathVQA의 경우, Pathology Image를 Pre-training 과정에서 많이 학습하지 못했다. (2) Visual USMLE의 경우 문제가 너무 길고 따라서 답도 길게 도출되어서 BERT만으로는 평가가 부정확하다는 것이다. 이러한 설명에도 불구하고 Evaluation 결과는 **Few-shot Learning이 정말 효과적인 것인지**에 대한 의문을 품게 한다. 적어도 **더 많고 핵심적인 데이터셋을 사용하여 pre-training을 진행**한 논문이 있다면 이를 판단하는 데 더 도움이 될 것이다.
 
+<br>
+
 # 💡 Summary
 
 **Med-Flamingo**는 Medical Domain에서 **Multimodal Few-shot learning**을 처음으로 적용한 모델이다. 그러나 결과적으로는 **성능이 좋지 않았다**. 이는 **데이터셋의 부적합성 및 부족**으로 인해 아직은 generalizability가 떨어지기 때문인 것으로 보인다. 앞으로 더 많은 데이터셋을 사용하여 실험을 진행하면 더 좋은 결과를 얻을 수 있을 것이다. 한 가지 Contribution을 더 찾자면 **Visual USMLE 데이터셋을 구축**했다는 점인데, 이 데이터셋은 쉽게 활용될 수 있기에 앞으로의 Medical VLM evaluation에서 자주 등장할 것 같다.
