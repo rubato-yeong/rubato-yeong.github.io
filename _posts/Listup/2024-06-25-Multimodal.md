@@ -14,14 +14,14 @@ date: 2024-06-25
 last_modified_at: 2024-06-25
 ---
 
-# 📊 Survey
+# 🎩 Survey
 
 * [[24’] A Survey on Multimodal Large Language Models](https://rubato-yeong.github.io/multimodal/survey-MLLM/)
   * Multimodal LLM 전반에 대해 정리한 글
 
 <br>
 
-# 😎 Early Works
+# ⏱ Early Works
 
 * [[21’ ICML] VL-T5: Unifying Vision-and-Language Tasks via Text Generation](https://rubato-yeong.github.io/multimodal/vlt5/)
   * Vision information을 text token으로 전환하는 구조의 multi-task unified framework를 제시함
@@ -35,7 +35,7 @@ last_modified_at: 2024-06-25
 
 <br>
 
-# ✨ Generative Model
+# 🔮 Generative Model
 
 ## 1. Instruction Tuning
 
@@ -79,7 +79,7 @@ last_modified_at: 2024-06-25
 
 <br>
 
-# 📌 LLM-Aided Visual Reasoning
+# 👀 LLM-Aided Visual Reasoning
 
 ## 1. Segmentation
 
