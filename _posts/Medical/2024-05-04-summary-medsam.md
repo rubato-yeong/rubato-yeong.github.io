@@ -1,5 +1,5 @@
 ---
-title:  "[23'~24'] SAM(Segment Anything) Models in Medical Domain" 
+title:  "[Summary] SAM(Segment Anything) Models in Medical Domain" 
 excerpt: ""
 
 categories:
