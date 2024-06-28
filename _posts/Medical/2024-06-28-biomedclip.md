@@ -1,5 +1,5 @@
 ---
-title:  "[23'] BiomedCLIP: a multimodal biomedical foundation model pretrained from fifteen million scientific image-text pairs" 
+title:  "[23'] BiomedCLIP: A Multimodal Biomedical Foundation Model Pretrained from Fifteen Million Scientific Image-text Pairs" 
 excerpt: ""
 
 categories:
@@ -77,6 +77,6 @@ Microsoft Research에서 2023년에 발표한 논문이다. 논문의 형식을 
 
 # 📃 Reference
 
-* [[23'] BiomedCLIP: a multimodal biomedical foundation model pretrained from fifteen million scientific image-text pairs](https://arxiv.org/abs/2303.00915)
+* [[23'] BiomedCLIP: A Multimodal Biomedical Foundation Model Pretrained from Fifteen Million Scientific Image-text Pairs](https://arxiv.org/abs/2303.00915)
 
 <br>
