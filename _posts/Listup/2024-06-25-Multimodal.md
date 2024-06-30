@@ -123,6 +123,9 @@ last_modified_at: 2024-06-25
 * [[23’] Shikra: Unleashing Multimodal LLM’s Referential Dialogue Magic](https://rubato-yeong.github.io/multimodal/shikra/)
   * Bounding box를 단순 text로 취급하여 Input/Output으로 처리할 수 있는 간단한 아이디어를 제시함
   * Grounded Conversation, Multimodal Chain-of-Thought의 초기 아이디어로도 볼 수 있음
+* [[24'] GPT4RoI: Instruction Tuning Large Language Model on Region-of-Interest](https://rubato-yeong.github.io/multimodal/gpt4roi/)
+  * Region-of-Interest를 RoIAlign으로 embedding하여 MLLM에 사용하는 방법론을 제시함
+  * Bounding box를 text로 취급하는 것보다 풍부한 visual information을 포함한다고 주장함
 * [[24’ CVPR] PixelLLM: Pixel Aligned Language Models](https://rubato-yeong.github.io/multimodal/pixelllm/)
   * VLM의 language token과 함께 LLM이 어디를 보고 있는지에 대한 localization 정보를 제공함
   
