@@ -91,9 +91,14 @@ last_modified_at: 2024-06-25
   * LISA를 추가 데이터셋을 이용해 Instance Segmentation, SiD(Segmentation in Dialogue)도 가능하도록 확장함
 * [[24’ CVPR] PixelLM: Pixel Reasoning with Large Multimodal Model](https://rubato-yeong.github.io/multimodal/pixellm/)
   * Lightweight pixel decoder와 segmentation codebook을 이용해 LISA 구조에서 multiple target segmentation이 가능하도록 함
+* [[24’ CVPR] GSVA: Generalized Segmentation via Multimodal Large Language Models](https://rubato-yeong.github.io/multimodal/gsva/)
+  * LISA에서 GRES Task를 풀기 위해 여러 개의 `<SEG>` token과 `<REJ>` token을 사용할 것을 제안함
 * [[24’ CVPR] GLaMM: Pixel Grounding Large Multimodal Model](https://rubato-yeong.github.io/multimodal/glamm/)
   * GCG(Grounded Conversation Generation) Task를 제안하고, Visual Prompt를 Input으로 이용할 수 있는 확장된 LISA 모델을 제안함
   * SA-1B dataset을 재가공하여 GCG task에 맞는 거대 데이터셋인 GranD dataset(11M)을 제작함
+* [[24' CVPR] GROUNDHOG: Grounding Large Language Models to Holistic Segmentation](https://rubato-yeong.github.io/multimodal/groundhog/)
+  * 강력한 Mask Proposal Model인 Mask2Former+를 사용한 Proposal Stage와 Language-guided Grounding을 사용한 Retrieval Stage로 구성된 GROUNDHOG 모델을 제시함
+  * 다양한 task를 포함한 2.5M의 M3G2 dataset을 구축하여 훈련함
 
 ### Referring Segmentation
 
@@ -103,8 +108,6 @@ last_modified_at: 2024-06-25
   * CLIP과 Mask Prompt Tuning을 사용하여 Open-Vocabulary Semantic Segmentation Task를 해결함
 * [[23’ CVPR] GRES: Generalized Referring Expression Segmentation](https://rubato-yeong.github.io/multimodal/gres/)
   * Multi-target, Empty-target expression에 대해 대답해야 하는 GRES Task를 제안하고 이를 해결하기 위한 ReLA 모델을 제시함
-* [[24’ CVPR] GSVA: Generalized Segmentation via Multimodal Large Language Models](https://rubato-yeong.github.io/multimodal/gsva/)
-  * LISA에서 GRES Task를 풀기 위해 여러 개의 `<SEG>` token과 `<REJ>` token을 사용할 것을 제안함
   * LISA와 같은 LLM-aided segmentation에서의 In-context Learning의 효과를 발견함
 * [[24’ CVPR] UniLSeg: Universal Segmentation at Arbitrary Granularity with Language Instruction](https://rubato-yeong.github.io/multimodal/unilseg/)
   * Various granularity에서 모두 segmentation할 수 있는 universal segmentation model을 제안함
