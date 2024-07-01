@@ -123,6 +123,8 @@ last_modified_at: 2024-07-01
 
 ## 2. Localization
 
+* [[24' ICLR] KOSMOS-2: Grounding Multimodal Large Language Models to the World](https://rubato-yeong.github.io/multimodal/kosmos-2/)
+  * Bounding box input/output을 `<loc>` token으로 처리할 수 있는 MLLM을 제시하였으나, 이는 top-left, bottom-right만을 표현한다는 한계점이 있음
 * [[23’] Shikra: Unleashing Multimodal LLM’s Referential Dialogue Magic](https://rubato-yeong.github.io/multimodal/shikra/)
   * Bounding box를 단순 text로 취급하여 Input/Output으로 처리할 수 있는 간단한 아이디어를 제시함
   * Grounded Conversation, Multimodal Chain-of-Thought의 초기 아이디어로도 볼 수 있음
