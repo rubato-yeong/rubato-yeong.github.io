@@ -11,7 +11,7 @@ toc: true
 toc_sticky: true
  
 date: 2024-06-25
-last_modified_at: 2024-06-25
+last_modified_at: 2024-07-01
 ---
 
 # 🎩 Survey
@@ -49,6 +49,9 @@ last_modified_at: 2024-06-25
 
 * [[22’ NIPS] Flamingo: a Visual Language Model for Few-Shot Learning](https://rubato-yeong.github.io/multimodal/flamingo/)
   * Multimodal Few-shot learning task를 위한 Flamingo 모델을 제시함
+* [[23' NIPS] KOSMOS-1: Language Is Not All You Need: Aligning Perception with Language Models](https://rubato-yeong.github.io/multimodal/kosmos-1/)
+  * Multimodal in-context learning, multimodal chain-of-thought를 가능하게 하는 interleaved image-text input을 사용한 KOSMOS-1 모델을 제시함
+  * IQ Test로 nonverbal in-context learning capability를 측정한 점이 특징
 * [[24’] MM1: Methods, Analysis & Insights from Multimodal LLM Pre-training](https://rubato-yeong.github.io/multimodal/mm1/)
   * Apple의 논문으로, MLLM Pipeline을 분석하고, 이를 최적화한 MM1 모델을 제시함
 
