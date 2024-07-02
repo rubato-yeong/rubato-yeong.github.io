@@ -84,7 +84,22 @@ last_modified_at: 2024-07-01
 
 # 👀 LLM-Aided Visual Reasoning
 
-## 1. Segmentation
+## 1. Localization
+
+* [[24' ICLR] KOSMOS-2: Grounding Multimodal Large Language Models to the World](https://rubato-yeong.github.io/multimodal/kosmos-2/)
+  * Bounding box input/output을 `<loc>` token으로 처리할 수 있는 MLLM을 제시하였으나, 이는 top-left, bottom-right만을 표현한다는 한계점이 있음
+* [[23’] Shikra: Unleashing Multimodal LLM’s Referential Dialogue Magic](https://rubato-yeong.github.io/multimodal/shikra/)
+  * Bounding box를 단순 text로 취급하여 Input/Output으로 처리할 수 있는 간단한 아이디어를 제시함
+  * Grounded Conversation, Multimodal Chain-of-Thought의 초기 아이디어로도 볼 수 있음
+* [[24'] GPT4RoI: Instruction Tuning Large Language Model on Region-of-Interest](https://rubato-yeong.github.io/multimodal/gpt4roi/)
+  * Region-of-Interest를 RoIAlign으로 embedding하여 MLLM에 사용하는 방법론을 제시함
+  * Bounding box를 text로 취급하는 것보다 풍부한 visual information을 포함한다고 주장함
+* [[24' ICLR] Ferret: Refer and Ground Anything Anywhere at Any Granularity](https://rubato-yeong.github.io/multimodal/ferret/)
+  * Arbitrary shape의 spatial input을 point-based approach를 통해 visual feature로 추출하는 spatial-aware visual sampler를 제시함
+* [[24’ CVPR] PixelLLM: Pixel Aligned Language Models](https://rubato-yeong.github.io/multimodal/pixelllm/)
+  * VLM의 language token과 함께 LLM이 어디를 보고 있는지에 대한 localization 정보를 제공함
+
+## 2. Segmentation
 
 ### LLM-guided Segmentation
 
@@ -102,6 +117,9 @@ last_modified_at: 2024-07-01
 * [[24' CVPR] GROUNDHOG: Grounding Large Language Models to Holistic Segmentation](https://rubato-yeong.github.io/multimodal/groundhog/)
   * 강력한 Mask Proposal Model인 Mask2Former+를 사용한 Proposal Stage와 Language-guided Grounding을 사용한 Retrieval Stage로 구성된 GROUNDHOG 모델을 제시함
   * 다양한 task를 포함한 2.5M의 M3G2 dataset을 구축하여 훈련함
+* [[24'] F-LMM: Grounding Frozen Large Multimodal Models](https://rubato-yeong.github.io/multimodal/f-lmm/)
+  * Frozen LLM의 Attention Map을 사용해 Segmentation Map을 생성하는 F-LMM 모델을 제시함
+  * 기존의 Grounding-Chat Trade-off 문제를 해결하고, LLM의 Conversation 능력이 좋을수록 Grounding 능력도 좋을 수 있다는 것을 보여줌
 
 ### Referring Segmentation
 
@@ -120,21 +138,6 @@ last_modified_at: 2024-07-01
 * [[24’ CVPR] LLaFS: When Large Language Models Meet Few-Shot Segmentation](https://rubato-yeong.github.io/multimodal/llafs/)
   * 기존 Few-shot Segmentation을 LLM에서 In-context Learning 방식으로 해석함
   * Region-attribute table을 제안하여 LLM이 이미지를 region-wise attribute로 이해할 수 있도록 함
-
-## 2. Localization
-
-* [[24' ICLR] KOSMOS-2: Grounding Multimodal Large Language Models to the World](https://rubato-yeong.github.io/multimodal/kosmos-2/)
-  * Bounding box input/output을 `<loc>` token으로 처리할 수 있는 MLLM을 제시하였으나, 이는 top-left, bottom-right만을 표현한다는 한계점이 있음
-* [[23’] Shikra: Unleashing Multimodal LLM’s Referential Dialogue Magic](https://rubato-yeong.github.io/multimodal/shikra/)
-  * Bounding box를 단순 text로 취급하여 Input/Output으로 처리할 수 있는 간단한 아이디어를 제시함
-  * Grounded Conversation, Multimodal Chain-of-Thought의 초기 아이디어로도 볼 수 있음
-* [[24'] GPT4RoI: Instruction Tuning Large Language Model on Region-of-Interest](https://rubato-yeong.github.io/multimodal/gpt4roi/)
-  * Region-of-Interest를 RoIAlign으로 embedding하여 MLLM에 사용하는 방법론을 제시함
-  * Bounding box를 text로 취급하는 것보다 풍부한 visual information을 포함한다고 주장함
-* [[24' ICLR] Ferret: Refer and Ground Anything Anywhere at Any Granularity](https://rubato-yeong.github.io/multimodal/ferret/)
-  * Arbitrary shape의 spatial input을 point-based approach를 통해 visual feature로 추출하는 spatial-aware visual sampler를 제시함
-* [[24’ CVPR] PixelLLM: Pixel Aligned Language Models](https://rubato-yeong.github.io/multimodal/pixelllm/)
-  * VLM의 language token과 함께 LLM이 어디를 보고 있는지에 대한 localization 정보를 제공함
   
 <br>
 
