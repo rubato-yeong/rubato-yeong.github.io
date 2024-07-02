@@ -123,6 +123,8 @@ last_modified_at: 2024-07-01
   * SAM을 사용한 LISA와 달리 Bounding Box, Mask 모두 Input/Output으로 사용할 수 있는 `<vis>` Token과 단순한 Encoder-decoder만으로 이루어진 End-to-end 모델로도 충분한 성능을 보일 수 있음을 증명함
   * LISA의 embedding-as-mask paradigm이 discrete representation을 사용하는 것보다 성능이 더 좋고 학습에도 유리하며 속도도 빠르다는 것을 보여줌
   * CLIP multi-layer fusion analysis를 통해 vision-centric task에 CLIP의 intermediate layer가 중요하다는 사실을 발견함
+* [[24'] LaSagnA: Language-based Segmentation Assistant for Complex Queries](https://rubato-yeong.github.io/multimodal/lasagna/)
+  * Semantic Segmentation의 Negative Class를 Instructization에 활용하여 LISA 등의 모델의 성능을 높이는 Data Augmentation 방법을 제시함
 * [[24'] F-LMM: Grounding Frozen Large Multimodal Models](https://rubato-yeong.github.io/multimodal/f-lmm/)
   * Frozen LLM의 Attention Map을 사용해 Segmentation Map을 생성하는 F-LMM 모델을 제시함
   * 기존의 Grounding-Chat Trade-off 문제를 해결하고, LLM의 Conversation 능력이 좋을수록 Grounding 능력도 좋을 수 있다는 것을 보여줌
