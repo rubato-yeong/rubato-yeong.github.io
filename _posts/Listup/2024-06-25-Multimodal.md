@@ -107,6 +107,8 @@ last_modified_at: 2024-07-01
   * Reasoning segmentation task를 제안하고, embedding-as-mask paradigm을 제안해 `<SEG>` token으로 segmentation mask를 예측함
 * [[23’] LISA++: An Improved Baseline for Reasoning Segmentation with Large Language Model](https://rubato-yeong.github.io/multimodal/lisa++/)
   * LISA를 추가 데이터셋을 이용해 Instance Segmentation, SiD(Segmentation in Dialogue)도 가능하도록 확장함
+* [[23'] LLaVA-Grounding: Grounded Visual Chat with Large Multimodal Models](https://rubato-yeong.github.io/multimodal/llava-grounding/)
+  * 기존 Visual Grounding 모델은 Conversation을 잘하지 못한다는 단점을 지적하고, 이를 해결하기 위해 Grounded Visual Instruction Data를 제작하여 훈련함
 * [[24’ CVPR] PixelLM: Pixel Reasoning with Large Multimodal Model](https://rubato-yeong.github.io/multimodal/pixellm/)
   * Lightweight pixel decoder와 segmentation codebook을 이용해 LISA 구조에서 multiple target segmentation이 가능하도록 함
 * [[24’ CVPR] GSVA: Generalized Segmentation via Multimodal Large Language Models](https://rubato-yeong.github.io/multimodal/gsva/)
