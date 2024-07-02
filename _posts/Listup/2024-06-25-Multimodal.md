@@ -94,7 +94,7 @@ last_modified_at: 2024-07-01
 * [[24'] GPT4RoI: Instruction Tuning Large Language Model on Region-of-Interest](https://rubato-yeong.github.io/multimodal/gpt4roi/)
   * Region-of-Interest를 RoIAlign으로 embedding하여 MLLM에 사용하는 방법론을 제시함
   * Bounding box를 text로 취급하는 것보다 풍부한 visual information을 포함한다고 주장함
-* [[24' ICLR] Ferret: Refer and Ground Anything Anywhere at Any Granularity](https://rubato-yeong.github.io/multimodal/ferret/)
+* [[24' ICLR] Ferret: Refer and Ground Anything /Anywhere at Any Granularity](https://rubato-yeong.github.io/multimodal/ferret/)
   * Arbitrary shape의 spatial input을 point-based approach를 통해 visual feature로 추출하는 spatial-aware visual sampler를 제시함
 * [[24’ CVPR] PixelLLM: Pixel Aligned Language Models](https://rubato-yeong.github.io/multimodal/pixelllm/)
   * VLM의 language token과 함께 LLM이 어디를 보고 있는지에 대한 localization 정보를 제공함
