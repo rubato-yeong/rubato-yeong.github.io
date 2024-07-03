@@ -77,6 +77,9 @@ last_modified_at: 2024-07-01
 
 * [[24’ TMLR] Multimodal Chain-of-Thought Reasoning in Language Models](https://rubato-yeong.github.io/multimodal/mmcot/)
   * Lightweight multimodal model(1B)에서 reasoning을 수행하는 two-stage framework를 제안함
+* [[24' CVPR] Compositional Chain-of-Thought Prompting for Large Multimodal Models](https://rubato-yeong.github.io/multimodal/ccot/)
+  * MLLM이 Attribute, Relationship을 잘 인지하지 못한다는 문제를 지적하고, 이를 해결하기 위해 SG(Scene Graph)를 생성하도록 강제하는 Compositional Chain-of-Thought(CCoT)를 제시함
+  * Bounding box와 같은 구체적인 정보까지 SG에 포함시키는 것은 일반적인 MLLM Task에서 불필요하며, 여전히 작은 모델에서는 CCoT의 Hallucination 문제가 발생할 수 있음
 * [[24'] Visual CoT: Unleashing Chain-of-Thought Reasoning in Multi-Modal Language Models](https://rubato-yeong.github.io/multimodal/viscot/)
   * Multimodal LLM에서 bounding box를 예측하는 image reasoning step을 추가한 Visual CoT 모델을 제시함
 
