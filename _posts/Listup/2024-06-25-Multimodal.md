@@ -70,6 +70,9 @@ last_modified_at: 2024-07-01
   * 이를 극복하기 위해 CLIP과 DINOv2를 융합한 I-MoF 모델을 제시함
 * [[24' CVPR] VIVL: Towards Better Vision-Inspired Vision-Language Models](https://rubato-yeong.github.io/multimodal/vivl/)
   * VLM에서 Vision-Language Interaction이 부족함을 지적하며 Visual Encoder, Adapter의 Interaction을 강화한 FPE와 DVCP Module을 제시함
+* [[24'] ConvLLaVA: Hierarchical Backbones as Visual Encoder for Large Multimodal Models](https://rubato-yeong.github.io/multimodal/convllava/)
+  * ViT에 비해 계산량이 적은 ConvNeXt를 Visual Encoder로 사용하여 High-resolution input을 처리하는 ConvLLaVA 모델을 제시함
+  * High-resolution, Many Visual Token, Vision Encoder Training이 성능 향상에 중요하다는 것을 보여줌
 
 <br>
 
