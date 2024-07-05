@@ -99,6 +99,10 @@ last_modified_at: 2024-07-01
   * Bounding box를 text로 취급하는 것보다 풍부한 visual information을 포함한다고 주장함
 * [[24' ICLR] Ferret: Refer and Ground Anything /Anywhere at Any Granularity](https://rubato-yeong.github.io/multimodal/ferret/)
   * Arbitrary shape의 spatial input을 point-based approach를 통해 visual feature로 추출하는 spatial-aware visual sampler를 제시함
+* [[24' CVPR] Osprey: Pixel Understanding with Visual Instruction Tuning](https://rubato-yeong.github.io/multimodal/osprey/)
+  * Mask-based Instruction Data의 부족을 지적하고, 이를 해결하는 Osprey-724K 데이터셋을 제작함
+  * Mask Input을 처리하기 위해 Mask-Aware Visual Extracter를 사용하였으며, 이는 Spatial Geometry를 반영할 수 있다는 점에서 Ferret의 방법보다 우수함
+  * ConvNeXt Vision Encoder가 High-resolution Input 계산량 면에서 ViT보다 우수하다는 것을 보였으나, 성능 비교는 하지 않음
 * [[24’ CVPR] PixelLLM: Pixel Aligned Language Models](https://rubato-yeong.github.io/multimodal/pixelllm/)
   * VLM의 language token과 함께 LLM이 어디를 보고 있는지에 대한 localization 정보를 제공함
 
