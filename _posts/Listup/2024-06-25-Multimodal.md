@@ -76,6 +76,10 @@ last_modified_at: 2024-07-01
 * [[24'] ConvLLaVA: Hierarchical Backbones as Visual Encoder for Large Multimodal Models](https://rubato-yeong.github.io/multimodal/convllava/)
   * ViT에 비해 계산량이 적은 ConvNeXt를 Visual Encoder로 사용하여 High-resolution input을 처리하는 ConvLLaVA 모델을 제시함
   * High-resolution, Many Visual Token, Vision Encoder Training이 성능 향상에 중요하다는 것을 보여줌
+* [[24'] Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs](https://rubato-yeong.github.io/multimodal/cambrian-1/)
+  * 지금까지의 MLLM Benchmark가 MLLM의 성능을 잘 평가하지 못한다고 지적하며, Vision-centric Benchmark인 CV-Bench를 제안함
+  * Vision Encoder Unfreezing, Vision Encoder Ensemble을 통해 성능이 향상되는 것을 확인하고, DINOv2와 ConvNeXt의 의미를 재확인함; 더 나아가 Spatial Vision Aggregator(SVA)를 제안하여 여러 Vision Encoder의 Feature를 효율적으로 종합하는 방법을 제안
+  * Data Distribution이 Instruction Tuning에 중요하다는 것을 확인하고, 이를 조정한 Cambrian-7M 데이터셋을 제작; 또한 System Prompting을 통해 Condition을 주고 Instruction Tuning을 진행하는 것이 중요하다는 것을 확인함
 
 <br>
 
