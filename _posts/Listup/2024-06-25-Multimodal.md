@@ -37,6 +37,9 @@ last_modified_at: 2024-07-01
 
 ## 2. Segmentation
 
+* [[22' ECCV] MaskCLIP: Extract Free Dense Labels from CLIP](https://rubato-yeong.github.io/multimodal/maskclip/)
+  * MaskCLIP은 학습 없이 CLIP Last Layer Feature Map으로부터 Dense Label을 추출하고, 이를 다듬는 (1) Key Smoothing과 (2) Prompt Denoising 기법을 제시함
+  * MaskCLIP+는 Pseudo Labeling과 Self-training을 통해 MaskCLIP의 성능을 더 개선시킴
 * [[22' ECCV] Zsseg: A Simple Baseline for Open-Vocabulary Semantic Segmentation with Pre-trained Vision-Language Model](https://rubato-yeong.github.io/multimodal/zegclip/)
   * CLIP은 Image 전체에 대한 정보를 추출하는 반면 Segmentation Task는 Pixel 단위로 한다는 점을 지적하며 Mask Proposal Model을 사용하여 Region Proposal을 제시하고, 이를 CLIP을 이용하여 Zero-shot Classification을 수행하는 Two-stage framework를 제시함
 * [[22' CVPR] ZegFormer: Decoupling Zero-Shot Semantic Segmentation](https://rubato-yeong.github.io/multimodal/zegclip/)
