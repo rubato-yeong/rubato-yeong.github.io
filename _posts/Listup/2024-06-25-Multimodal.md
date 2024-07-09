@@ -37,9 +37,9 @@ last_modified_at: 2024-07-01
 
 ## 2. Segmentation
 
-* [[22' ECCV] zsseg: A Simple Baseline for Open-Vocabulary Semantic Segmentation with Pre-trained Vision-Language Model](https://rubato-yeong.github.io/multimodal/zegclip/)
+* [[22' ECCV] Zsseg: A Simple Baseline for Open-Vocabulary Semantic Segmentation with Pre-trained Vision-Language Model](https://rubato-yeong.github.io/multimodal/zegclip/)
   * CLIP은 Image 전체에 대한 정보를 추출하는 반면 Segmentation Task는 Pixel 단위로 한다는 점을 지적하며 Mask Proposal Model을 사용하여 Region Proposal을 제시하고, 이를 CLIP을 이용하여 Zero-shot Classification을 수행하는 Two-stage framework를 제시함
-* [[22' CVPR] Decoupling Zero-Shot Semantic Segmentation](https://rubato-yeong.github.io/multimodal/zegclip/)
+* [[22' CVPR] ZegFormer: Decoupling Zero-Shot Semantic Segmentation](https://rubato-yeong.github.io/multimodal/zegclip/)
   * 기존의 Pixel-level Segmentation은 Seen object와 Unseen object의 의미를 잘 통합하지 못한다는 문제점을 지적함
   * ZS3(Zero-Shot Semantic Segmentation)을 (1) Class-agnostic Grouping과 (2) Segment-level Zero-shot Classification 문제로 분리하여 해결하는 방법을 제시함
 * [[23' CVPR] ZegCLIP: Towards Adapting CLIP for Zero-shot Semantic Segmentation](https://rubato-yeong.github.io/multimodal/zegclip/)
