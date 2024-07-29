@@ -188,6 +188,12 @@ last_modified_at: 2024-07-01
   
 <br>
 
+# 🐍 Hallucination
+
+* [[24' CVPR] HallusionBench: An Advanced Diagnostic Suite for Entangled Language Hallucination and Visual Illusion in Large Vision-Language Models](https://rubato-yeong.github.io/multimodal/hallusionbench/)
+  * LMM의 Hallucination을 평가하기 위하여 Vision Dependent, Vision Supplement 질문을 제시하는 HallusionBench Benchmark를 제시함
+  * LMM의 Hallucination을 Language Hallucination과 Visual Illusion으로 구분하고, 각 현상이 GPT-4V를 포함한 다양한 LMM에서 흔하게 발생한다는 것을 보여줌
+
 # 💯 Evaluation and Benchmark
 
 * [[24'] MMStar: Are We on the Right Way for Evaluating Large Vision-Language Models?](https://rubato-yeong.github.io/multimodal/mmstar/)
