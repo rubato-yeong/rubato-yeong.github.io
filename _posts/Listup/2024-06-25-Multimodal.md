@@ -201,6 +201,9 @@ last_modified_at: 2024-08-13
 * [[24' CVPR] OPERA: Alleviating Hallucination in Multi-Modal Large Language Models via Over-Trust Penalty and Retrospection-Allocation](https://rubato-yeong.github.io/multimodal/opera/)
   * LMM의 Attention Map을 분석하여 Hallucination이 발생하는 columnar pattern과 summary token을 발견하였고, 이는 repetition과도 관련됨
   * Hallucination을 줄이기 위해 Over-Trust Logit Penalty와 Retrospection-Allocation Strategy를 제안함
+* [[24' ICLR-WS] Skip \n: A Simple Method to Reduce Hallucination in Large Vision-Language Models](https://rubato-yeong.github.io/multimodal/skip-n/)
+  * LMM Hallucination은 보통 `\n\n` token 이후에 발생한다는 것을 발견하고, `\n`의 생성을 줄이는 Skip \n이라는 간단한 방법을 제안하였고, 이는 기존 방법들보다 훨씬 간단하고 효과적임
+  * Greedy Decoding이 Hallucination에 Robust하다는 것을 재발견함
 * [[24'] VDGD: Mitigating LVLM Hallucinations in Cognitive Prompts by Bridging the Visual Perception Gap](https://rubato-yeong.github.io/multimodal/vdgd/)
   * LMM의 Visual Ability를 단순히 이미지를 설명하는 VR(Visual Recognition)과 이를 이해하고 추론하는 VP(Visual Perception)으로 나누었고, VP가 잘 되지 않는 이유를 VR과 Cognitive Skill을 동시에 활용하기 어렵다는 Visual Perception Gap으로 설명함
   * VR Hallucination을 그 원인에 따라 Language, Vision, Style, IT으로 나누어 분석하고, Language Hallucination에서 VCD가 잘 작동하는 이유를 Probability Gap으로 설명하며 Style, IT에 대한 연구가 부족하다고 지적함
