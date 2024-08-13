@@ -190,12 +190,23 @@ last_modified_at: 2024-08-13
 
 # 🐍 Hallucination
 
-* [[24' CVPR] OPERA: Alleviating Hallucination in Multi-Modal Large Language Models via Over-Trust Penalty and Retrospection-Allocation](https://rubato-yeong.github.io/multimodal/opera/)
-  * LMM의 Attention Map을 분석하여 Hallucination이 발생하는 columnar pattern과 summary token을 발견하였고, 이는 repetition과도 관련됨
-  * Hallucination을 줄이기 위해 Over-Trust Logit Penalty와 Retrospection-Allocation Strategy를 제안함
+## 1. Hallucination Evaluation
+
 * [[24' CVPR] HallusionBench: An Advanced Diagnostic Suite for Entangled Language Hallucination and Visual Illusion in Large Vision-Language Models](https://rubato-yeong.github.io/multimodal/hallusionbench/)
   * LMM의 Hallucination을 평가하기 위하여 Vision Dependent, Vision Supplement 질문을 제시하는 HallusionBench Benchmark를 제시함
   * LMM의 Hallucination을 Language Hallucination과 Visual Illusion으로 구분하고, 각 현상이 GPT-4V를 포함한 다양한 LMM에서 흔하게 발생한다는 것을 보여줌
+  
+## 2. Hallucination Mitigation
+
+* [[24' CVPR] OPERA: Alleviating Hallucination in Multi-Modal Large Language Models via Over-Trust Penalty and Retrospection-Allocation](https://rubato-yeong.github.io/multimodal/opera/)
+  * LMM의 Attention Map을 분석하여 Hallucination이 발생하는 columnar pattern과 summary token을 발견하였고, 이는 repetition과도 관련됨
+  * Hallucination을 줄이기 위해 Over-Trust Logit Penalty와 Retrospection-Allocation Strategy를 제안함
+* [[24'] VDGD: Mitigating LVLM Hallucinations in Cognitive Prompts by Bridging the Visual Perception Gap](https://rubato-yeong.github.io/multimodal/vdgd/)
+  * LMM의 Visual Ability를 단순히 이미지를 설명하는 VR(Visual Recognition)과 이를 이해하고 추론하는 VP(Visual Perception)으로 나누었고, VP가 잘 되지 않는 이유를 VR과 Cognitive Skill을 동시에 활용하기 어렵다는 Visual Perception Gap으로 설명함
+  * VR Hallucination을 그 원인에 따라 Language, Vision, Style, IT으로 나누어 분석하고, Language Hallucination에서 VCD가 잘 작동하는 이유를 Probability Gap으로 설명하며 Style, IT에 대한 연구가 부족하다고 지적함
+  * VDGD(Visual Description Grounding Decoding)을 제안함; (1) Image Description을 생성한 뒤 다음 Inference에서 정답을 맞추도록 하고, (2) Image Description과의 KL-Divergence가 낮은 Token을 Preference로 두어 Decoding을 수행하는 방법으로 Hallucination을 줄일 수 있음
+
+<br>
 
 # 💯 Evaluation and Benchmark
 
