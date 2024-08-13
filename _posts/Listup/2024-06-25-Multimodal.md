@@ -11,7 +11,7 @@ toc: true
 toc_sticky: true
  
 date: 2024-06-25
-last_modified_at: 2024-07-01
+last_modified_at: 2024-08-13
 ---
 
 # 🎩 Survey
@@ -201,6 +201,10 @@ last_modified_at: 2024-07-01
 
 * [[24'] MMStar: Are We on the Right Way for Evaluating Large Vision-Language Models?](https://rubato-yeong.github.io/multimodal/mmstar/)
   * 기존 VLM Evaluation이 Dataset의 Quality와 Data Leakage 문제로 부정확하다는 것을 지적하고, 이를 해결하기 위한 MMStar Benchmark를 제시함
+* [[24' ICLR] Beyond Task Performance: Evaluating and Reducing the Flaws of Large Multimodal Models with In-Context Learning](https://rubato-yeong.github.io/multimodal/x-icl/)
+  * MLLM의 능력을 5가지 축(Hallucination, Abstention, Compositionality, Explanability, Instruction Following)으로 나누어 평가하고, 모든 축에서 MLLM의 성능은 충분하지 않음을 확인함
+  * 일반적으로 사용되는 Multimodal ICL은 Instruction Following을 약간 개선시키지만 Hallucination은 오히려 악화시킴
+  * 따라서 Multitask-ICL, Chain-of-Hindsight-ICL, Self-Correcting-ICL을 제안하고, 이러한 방법들로 Abstention, Explanability 등을 개선시킬 수 있음을 보여줌
 
 <br>
 
