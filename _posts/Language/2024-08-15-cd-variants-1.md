@@ -1,5 +1,5 @@
 ---
-title:  "[Summary] Recent Contrastive Decoding Variants" 
+title:  "[Summary] Recent Contrastive Decoding Variants (1)" 
 excerpt: ""
 
 categories:
@@ -24,11 +24,11 @@ last_modified_at: 2024-08-15
 
 # 🔍 Abstract
 
-ACL 2023에서 **Contrastive Decoding**이 발표된 후, 이후 여러 연구들이 이를 확장하거나 변형하여 새로운 방법을 제안하고 있다. 이번 포스트에서는 최근 Contrastive Decoding을 활용한 연구들 중 주목할 만한 연구들을 소개하고자 한다. 각 연구들의 내용을 간략하게 소개하면 다음과 같다.
+ACL 2023에서 [Contrastive Decoding](https://rubato-yeong.github.io/language/cd/)이 발표된 후, 이후 여러 연구들이 이를 확장하거나 변형하여 새로운 방법을 제안하고 있다. 이번 포스트에서는 최근 Contrastive Decoding을 활용한 연구들 중 주목할 만한 연구들을 소개하고자 한다. 각 연구들의 내용을 간략하게 소개하면 다음과 같다.
 
 1. **Contrastive Decoding Improves Reasoning in Large Language Models**: **Contrastive Decoding의 식을 변형**하여 더 **일반화**된 Contrastive Decoding 방식을 제안하고, Task별로 Contrastive Decoding의 효과를 분석하여 Reasoning Task에서 Contrastive Decoding이 효과적임을 보여준다.
 2. **Trusting Your Evidence: Hallucinate Less with Context-aware Decoding**: Contrastive Decoding을 활용하여 Hallucination을 줄이기 위해 Context가 있는 LLM과 **Context가 없는 LLM**을 사용한 Contrastive Decoding을 제안한다.
-3. **Alleviating Hallucinations of Large Language Models through Induced Hallucinations**: Contrastive Decoding을 활용하여 Hallucination을 줄이기 위해 **Hallucination을 강제로 발생시키도록 Fine-tuning한 LL**M을 사용한 Contrastive Decoding을 제안한다.
+3. **Alleviating Hallucinations of Large Language Models through Induced Hallucinations**: Contrastive Decoding을 활용하여 Hallucination을 줄이기 위해 **Hallucination을 강제로 발생시키도록 Fine-tuning한 LLM**을 사용한 Contrastive Decoding을 제안한다.
 
 <br>
 
