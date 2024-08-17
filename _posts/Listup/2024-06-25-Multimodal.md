@@ -200,12 +200,17 @@ last_modified_at: 2024-08-13
 
 ### Contrastive Decoding
 
-* [[24' CVPR] VCD: Mitigating Object Hallucinations in Large Vision-Language Models through Visual Contrastive Decoding](https://rubato-yeong.github.io/multimodal/multimodal-cd-1/)
+* [[24' CVPR] VCD: Mitigating Object Hallucinations in Large Vision-Language Models through Visual Contrastive Decoding](https://rubato-yeong.github.io/multimodal/vcd/)
   * Distorted Image를 사용하여 Visual Uncertainty를 부여한 모델에서는 Language Prior와 Statistical Bias가 증폭되어 Hallucination이 발생하는 것을 확인
   * 기존 LMM과 Distorted Image를 사용한 LMM 간의 Contrastive Decoding을 수행하여 Object Hallucination을 개선
-* [[24' CVPR] M3ID: Multi-Modal Hallucination Control by Visual Information Grounding](https://rubato-yeong.github.io/multimodal/multimodal-cd-1/)
+* [[24' CVPR] M3ID: Multi-Modal Hallucination Control by Visual Information Grounding](https://rubato-yeong.github.io/multimodal/m3id/)
   * Visual Input에 Output이 얼마나 의존하는지 측정하는 PDM(Visual Prompt Dependency Measure)를 만들고, 생성되는 문장이 길어짐에 따라 Image의 기여도가 떨어져 Hallucination이 증가하는 fading memory effect를 확인
   * 문장이 길어짐에 따라 Image의 기여도를 높이는 Dynamic Adjustment를 포함한 Contrastive Decoding을 수행하여 Object Hallucination을 개선
+* [[24'] IBD: Alleviating Hallucinations in Large Vision-Language Models via Image-Biased Decoding](https://rubato-yeong.github.io/multimodal/ibd/)
+  * Image에 대한 Attention Score를 높여 Image-biased Model을 만들고, 이를 기존 LMM과 혼합하여 Image-biased Decoding을 수행하였음
+  * Image-biased Model은 Content Token의 Probability를 높이고, Functional Token의 Probability를 낮추는 효과가 있음; 또한 두 모델의 Token Probability Distribution이 유사할수록 Image-biased Model의 예측 능력이 떨어짐
+  * LLM의 Factual Recall과 비슷하게 Content Word를 생성하는 것은 어렵기 때문에, Late Layer까지도 Probability Distribution이 바뀌는 것을 확인함
+  * Image-based Hallucination은 Visual Content와 LLM의 Parametric Knowledge 사이의 충돌이 있는 경우 빈번하게 발생함
 
 ### Other Strategy
 
