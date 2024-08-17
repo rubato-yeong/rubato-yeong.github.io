@@ -198,6 +198,17 @@ last_modified_at: 2024-08-13
   
 ## 2. Hallucination Mitigation
 
+### Contrastive Decoding
+
+* [[24' CVPR] VCD: Mitigating Object Hallucinations in Large Vision-Language Models through Visual Contrastive Decoding](https://rubato-yeong.github.io/multimodal/multimodal-cd-1/)
+  * Distorted Image를 사용하여 Visual Uncertainty를 부여한 모델에서는 Language Prior와 Statistical Bias가 증폭되어 Hallucination이 발생하는 것을 확인
+  * 기존 LMM과 Distorted Image를 사용한 LMM 간의 Contrastive Decoding을 수행하여 Object Hallucination을 개선
+* [[24' CVPR] M3ID: Multi-Modal Hallucination Control by Visual Information Grounding](https://rubato-yeong.github.io/multimodal/multimodal-cd-1/)
+  * Visual Input에 Output이 얼마나 의존하는지 측정하는 PDM(Visual Prompt Dependency Measure)를 만들고, 생성되는 문장이 길어짐에 따라 Image의 기여도가 떨어져 Hallucination이 증가하는 fading memory effect를 확인
+  * 문장이 길어짐에 따라 Image의 기여도를 높이는 Dynamic Adjustment를 포함한 Contrastive Decoding을 수행하여 Object Hallucination을 개선
+
+### Other Strategy
+
 * [[24' CVPR] OPERA: Alleviating Hallucination in Multi-Modal Large Language Models via Over-Trust Penalty and Retrospection-Allocation](https://rubato-yeong.github.io/multimodal/opera/)
   * LMM의 Attention Map을 분석하여 Hallucination이 발생하는 columnar pattern과 summary token을 발견하였고, 이는 repetition과도 관련됨
   * Hallucination을 줄이기 위해 Over-Trust Logit Penalty와 Retrospection-Allocation Strategy를 제안함
@@ -219,6 +230,8 @@ last_modified_at: 2024-08-13
   * MLLM의 능력을 5가지 축(Hallucination, Abstention, Compositionality, Explanability, Instruction Following)으로 나누어 평가하고, 모든 축에서 MLLM의 성능은 충분하지 않음을 확인함
   * 일반적으로 사용되는 Multimodal ICL은 Instruction Following을 약간 개선시키지만 Hallucination은 오히려 악화시킴
   * 따라서 Multitask-ICL, Chain-of-Hindsight-ICL, Self-Correcting-ICL을 제안하고, 이러한 방법들로 Abstention, Explanability 등을 개선시킬 수 있음을 보여줌
+* [[24' ICML] Fool Your (Vision and) Language Model With Embarrassingly Simple Permutations](https://rubato-yeong.github.io/multimodal/adv-permutation/)
+  * MCQA(Multiple-Choice Question Answering) 상황에서 LLM과 VLLM이 Permutation에 굉장히 취약하며, 이는 Position Bias, Distractor Pattern, Symbol-Content Spurious Correlation 등의 요소로 인해 발생함
 
 <br>
 
