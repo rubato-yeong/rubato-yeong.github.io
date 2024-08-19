@@ -211,6 +211,14 @@ last_modified_at: 2024-08-13
   * Image-biased Model은 Content Token의 Probability를 높이고, Functional Token의 Probability를 낮추는 효과가 있음; 또한 두 모델의 Token Probability Distribution이 유사할수록 Image-biased Model의 예측 능력이 떨어짐
   * LLM의 Factual Recall과 비슷하게 Content Word를 생성하는 것은 어렵기 때문에, Late Layer까지도 Probability Distribution이 바뀌는 것을 확인함
   * Image-based Hallucination은 Visual Content와 LLM의 Parametric Knowledge 사이의 충돌이 있는 경우 빈번하게 발생함
+* [[24' ECCV] Contrastive Region Guidance: Improving Grounding in Vision-Language Models without Training](https://rubato-yeong.github.io/multimodal/multimodal-cd-1/)
+  * Visual Prompt(Bounding Box 등)를 Fine-tuning 없이도 이해하도록 Masking 전후 LMM에 대해 Contrastive Decoding을 수행하여 성능을 개선함
+* [[24'] Pensieve: Retrospect-then-Compare Mitigates Visual Hallucination](https://rubato-yeong.github.io/multimodal/multimodal-cd-1/)
+  * LMM의 Visual Branch가 정확한 정보뿐만 아니라 Hallucinated Concept까지 지지하는 것을 발견하고, 이를 Retrieval을 활용한 Contrastive Decoding을 통해 개선함
+  * Visual Branch의 Hallucination을 유도하는 Noise와 Language Branch의 Hallucination을 유도하는 Noise를 구분하여 Adaptive Parameter를 조절함
+* [[24' ACL Findings] ICD: Mitigating Hallucinations in Large Vision-Language Models with Instruction Contrastive Decoding](https://rubato-yeong.github.io/multimodal/multimodal-cd-1/)
+  * Instruction(Role Prefix)을 부여하면 LMM의 Language Prior 또는 Pretraining Data Bias에 취약해져 Hallucination이 심해지는 현상을 발견함
+  * 기존 LLM과 추가적인 Disturbance Instruction을 준 LLM 간의 Contrastive Decoding을 수행하여 Object/Attribute Hallucination을 개선하였고, 이는 VCD보다 효과적이며 VCD와 보완적으로 사용할 수도 있음
 
 ### Other Strategy
 
