@@ -211,6 +211,29 @@ last_modified_at: 2024-08-13
   * Image-biased Model은 Content Token의 Probability를 높이고, Functional Token의 Probability를 낮추는 효과가 있음; 또한 두 모델의 Token Probability Distribution이 유사할수록 Image-biased Model의 예측 능력이 떨어짐
   * LLM의 Factual Recall과 비슷하게 Content Word를 생성하는 것은 어렵기 때문에, Late Layer까지도 Probability Distribution이 바뀌는 것을 확인함
   * Image-based Hallucination은 Visual Content와 LLM의 Parametric Knowledge 사이의 충돌이 있는 경우 빈번하게 발생함
+* [[24' ECCV] Contrastive Region Guidance: Improving Grounding in Vision-Language Models without Training](https://rubato-yeong.github.io/multimodal/multimodal-cd-1/)
+  * Visual Prompt(Bounding Box 등)를 Fine-tuning 없이도 이해하도록 Masking 전후 LMM에 대해 Contrastive Decoding을 수행하여 성능을 개선함
+* [[24'] Pensieve: Retrospect-then-Compare Mitigates Visual Hallucination](https://rubato-yeong.github.io/multimodal/multimodal-cd-1/)
+  * LMM의 Visual Branch가 정확한 정보뿐만 아니라 Hallucinated Concept까지 지지하는 것을 발견하고, 이를 Retrieval을 활용한 Contrastive Decoding을 통해 개선함
+  * Visual Branch의 Hallucination을 유도하는 Noise와 Language Branch의 Hallucination을 유도하는 Noise를 구분하여 Adaptive Parameter를 조절함
+* [[24' ACL Findings] ICD: Mitigating Hallucinations in Large Vision-Language Models with Instruction Contrastive Decoding](https://rubato-yeong.github.io/multimodal/multimodal-cd-1/)
+  * Instruction(Role Prefix)을 부여하면 LMM의 Language Prior 또는 Pretraining Data Bias에 취약해져 Hallucination이 심해지는 현상을 발견함
+  * 기존 LLM과 추가적인 Disturbance Instruction을 준 LLM 간의 Contrastive Decoding을 수행하여 Object/Attribute Hallucination을 개선하였고, 이는 VCD보다 효과적이며 VCD와 보완적으로 사용할 수도 있음
+* [[24'] HIO: Alleviating Hallucinations in Large Vision-Language Models through Hallucination-Induced Optimization](https://rubato-yeong.github.io/multimodal/hio/)
+  * Contrastive Decoding이 잘 작동하는 조건을 이론적으로 분석하고, 이를 포함하여 Hallucination을 유도하는 DPO Loss를 제안함
+  * 이를 통해 Hallucinated LMM을 만들고 Contrastive Decoding을 수행하여 Object Hallucination을 개선함
+* [[24'] AvisC: Don't Miss the Forest for the Trees: Attentional Vision Calibration for Large Vision Language Models](https://rubato-yeong.github.io/multimodal/multimodal-cd-2/)
+  * Visual Hallucination을 유발하는, 과도한 Attention을 가진 Image Token을 발견하고 이를 Blind Token이라 명명함
+  * Blind Token만을 보는 Hallcinated LMM을 만들어 Contrastive Decoding을 수행하여 Object Hallucination을 개선함
+* [[24'] RITUAL: Random Image Transformations as a Universal Anti-hallucination Lever in LVLMs](https://rubato-yeong.github.io/multimodal/multimodal-cd-2/)
+  * Image Transformation을 통해 Augmented된 Image를 사용한 LMM과 원본 Image를 사용한 LMM의 Probability를 Ensemble하여 Object Hallucination을 개선함
+* [[24'] CODE: Contrasting Self-generated Description to Combat Hallucination in Large Multi-modal Models](https://rubato-yeong.github.io/multimodal/multimodal-cd-2/)
+  * Image Description을 생성한 것으로 Image를 대체하는 경우 Semantic Information이 충분하지 않아 Hallucination이 발생하는 것을 관찰하고, Self-generated Description을 사용한 LMM과 Contrastive Decoding을 수행하여 Object/Complicated Reasoning Hallucination을 개선함
+  * Image Description은 Vision과 Language Reasoning이 결합된 Task에서는 더 효과적일 수 있으나, Vision Reasoning이 이루어져야 하는 시각적으로 복잡한 Task에서는 Hallucination을 유발할 수 있음을 [VDGD](https://rubato-yeong.github.io/multimodal/vdgd/) 논문과 비교하여 작성하였음
+  * Contrastive Decoding 시 Token Distribution에 따라 Parameter를 조절하는 Dynamic Restriction $\alpha_ t$, Adaptive Information Constraint $\beta_ t$을 사용하여 Hallucination을 더 정밀하게 개선함
+* [[24'] AGLA: Mitigating Object Hallucinations in Large Vision-Language Models with Assembly of Global and Local Attention](https://rubato-yeong.github.io/multimodal/multimodal-cd-2/)
+  * Image Attention을 Prompt-independent한 Global Attention과 Prompt-dependent한 Local Attention으로 나누고, 기존 LMM이 Global Attention 값이 높아 Local Attention을 무시하고 있어 Hallucination이 발생한다는 것을 관찰함
+  * Global Attention을 Masking하고, Local Attention에 집중하도록 한 LMM과 기존 LMM을 Assembly하여 Object Hallucination을 개선함
 
 ### Other Strategy
 
@@ -224,6 +247,14 @@ last_modified_at: 2024-08-13
   * LMM의 Visual Ability를 단순히 이미지를 설명하는 VR(Visual Recognition)과 이를 이해하고 추론하는 VP(Visual Perception)으로 나누었고, VP가 잘 되지 않는 이유를 VR과 Cognitive Skill을 동시에 활용하기 어렵다는 Visual Perception Gap으로 설명함
   * VR Hallucination을 그 원인에 따라 Language, Vision, Style, IT으로 나누어 분석하고, Language Hallucination에서 VCD가 잘 작동하는 이유를 Probability Gap으로 설명하며 Style, IT에 대한 연구가 부족하다고 지적함
   * VDGD(Visual Description Grounding Decoding)을 제안함; (1) Image Description을 생성한 뒤 다음 Inference에서 정답을 맞추도록 하고, (2) Image Description과의 KL-Divergence가 낮은 Token을 Preference로 두어 Decoding을 수행하는 방법으로 Hallucination을 줄일 수 있음
+
+<br>
+
+# 🕶 Mechanical Interpretability
+
+* [[24' ICLR-WS] A Concept-Based Explainability Framework for Large Multimodal Models](https://rubato-yeong.github.io/multimodal/lmm-nmf/)
+  * Toy Dataset에 대해 공통 Concept Dictionary를 Semi-NMF 방법으로 찾아내고 이를 Logit Lens로 해석함
+  * Layer Ablation을 통해 Intermediate to Late Layer에서 Multimodal Structure가 나타남을 확인함
 
 <br>
 
