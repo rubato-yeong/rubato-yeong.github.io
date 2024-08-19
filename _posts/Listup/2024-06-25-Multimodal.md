@@ -219,6 +219,22 @@ last_modified_at: 2024-08-13
 * [[24' ACL Findings] ICD: Mitigating Hallucinations in Large Vision-Language Models with Instruction Contrastive Decoding](https://rubato-yeong.github.io/multimodal/multimodal-cd-1/)
   * Instruction(Role Prefix)을 부여하면 LMM의 Language Prior 또는 Pretraining Data Bias에 취약해져 Hallucination이 심해지는 현상을 발견함
   * 기존 LLM과 추가적인 Disturbance Instruction을 준 LLM 간의 Contrastive Decoding을 수행하여 Object/Attribute Hallucination을 개선하였고, 이는 VCD보다 효과적이며 VCD와 보완적으로 사용할 수도 있음
+* [[24'] HIO: Alleviating Hallucinations in Large Vision-Language Models through Hallucination-Induced Optimization](https://rubato-yeong.github.io/multimodal/hio/)
+  * Contrastive Decoding이 잘 작동하는 조건을 이론적으로 분석하고, 이를 포함하여 Hallucination을 유도하는 DPO Loss를 제안함
+  * 이를 통해 Hallucinated LMM을 만들고 Contrastive Decoding을 수행하여 Object Hallucination을 개선함
+* [[24'] AvisC: Don't Miss the Forest for the Trees: Attentional Vision Calibration for Large Vision Language Models](https://rubato-yeong.github.io/multimodal/multimodal-cd-2/)
+  * Visual Hallucination을 유발하는, 과도한 Attention을 가진 Image Token을 발견하고 이를 Blind Token이라 명명함
+  * Blind Token만을 보는 Hallcinated LMM을 만들어 Contrastive Decoding을 수행하여 Object Hallucination을 개선함
+* [[24'] RITUAL: Random Image Transformations as a Universal Anti-hallucination Lever in LVLMs](https://rubato-yeong.github.io/multimodal/multimodal-cd-2/)
+  * Image Transformation을 통해 Augmented된 Image를 사용한 LMM과 원본 Image를 사용한 LMM의 Probability를 Ensemble하여 Object Hallucination을 개선함
+* [[24'] CODE: Contrasting Self-generated Description to Combat Hallucination in Large Multi-modal Models](https://rubato-yeong.github.io/multimodal/multimodal-cd-2/)
+  * Image Description을 생성한 것으로 Image를 대체하는 경우 Semantic Information이 충분하지 않아 Hallucination이 발생하는 것을 관찰하고, Self-generated Description을 사용한 LMM과 Contrastive Decoding을 수행하여 Object/Complicated Reasoning Hallucination을 개선함
+  * Image Description은 Vision과 Language Reasoning이 결합된 Task에서는 더 효과적일 수 있으나, Vision Reasoning이 이루어져야 하는 시각적으로 복잡한 Task에서는 Hallucination을 유발할 수 있음을 [VDGD](https://rubato-yeong.github.io/multimodal/vdgd/) 논문과 비교하여 작성하였음
+  * Contrastive Decoding 시 Token Distribution에 따라 Parameter를 조절하는 Dynamic Restriction $\alpha_ t$, Adaptive Information Constraint $\beta_ t$을 사용하여 Hallucination을 더 정밀하게 개선함
+* [[24'] AGLA: Mitigating Object Hallucinations in Large Vision-Language Models with Assembly of Global and Local Attention](https://rubato-yeong.github.io/multimodal/multimodal-cd-2/)
+  * Image Attention을 Prompt-independent한 Global Attention과 Prompt-dependent한 Local Attention으로 나누고, 기존 LMM이 Global Attention 값이 높아 Local Attention을 무시하고 있어 Hallucination이 발생한다는 것을 관찰함
+  * Global Attention을 Masking하고, Local Attention에 집중하도록 한 LMM과 기존 LMM을 Assembly하여 Object Hallucination을 개선함
+
 
 ### Other Strategy
 
