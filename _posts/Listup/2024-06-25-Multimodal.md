@@ -235,7 +235,6 @@ last_modified_at: 2024-08-13
   * Image Attention을 Prompt-independent한 Global Attention과 Prompt-dependent한 Local Attention으로 나누고, 기존 LMM이 Global Attention 값이 높아 Local Attention을 무시하고 있어 Hallucination이 발생한다는 것을 관찰함
   * Global Attention을 Masking하고, Local Attention에 집중하도록 한 LMM과 기존 LMM을 Assembly하여 Object Hallucination을 개선함
 
-
 ### Other Strategy
 
 * [[24' CVPR] OPERA: Alleviating Hallucination in Multi-Modal Large Language Models via Over-Trust Penalty and Retrospection-Allocation](https://rubato-yeong.github.io/multimodal/opera/)
@@ -248,6 +247,14 @@ last_modified_at: 2024-08-13
   * LMM의 Visual Ability를 단순히 이미지를 설명하는 VR(Visual Recognition)과 이를 이해하고 추론하는 VP(Visual Perception)으로 나누었고, VP가 잘 되지 않는 이유를 VR과 Cognitive Skill을 동시에 활용하기 어렵다는 Visual Perception Gap으로 설명함
   * VR Hallucination을 그 원인에 따라 Language, Vision, Style, IT으로 나누어 분석하고, Language Hallucination에서 VCD가 잘 작동하는 이유를 Probability Gap으로 설명하며 Style, IT에 대한 연구가 부족하다고 지적함
   * VDGD(Visual Description Grounding Decoding)을 제안함; (1) Image Description을 생성한 뒤 다음 Inference에서 정답을 맞추도록 하고, (2) Image Description과의 KL-Divergence가 낮은 Token을 Preference로 두어 Decoding을 수행하는 방법으로 Hallucination을 줄일 수 있음
+
+<br>
+
+# 🕶 Mechanical Interpretability
+
+* [[24' ICLR-WS] A Concept-Based Explainability Framework for Large Multimodal Models](https://rubato-yeong.github.io/multimodal/lmm-nmf/)
+  * Toy Dataset에 대해 공통 Concept Dictionary를 Semi-NMF 방법으로 찾아내고 이를 Logit Lens로 해석함
+  * Layer Ablation을 통해 Intermediate to Late Layer에서 Multimodal Structure가 나타남을 확인함
 
 <br>
 
