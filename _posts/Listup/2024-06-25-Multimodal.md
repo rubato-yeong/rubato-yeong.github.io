@@ -18,6 +18,8 @@ last_modified_at: 2024-08-13
 
 * [[24’] A Survey on Multimodal Large Language Models](https://rubato-yeong.github.io/multimodal/survey-MLLM/)
   * Multimodal LLM 전반에 대해 정리한 글
+* [[24'] Hallucination of Multimodal Large Language Models: A Survey](https://rubato-yeong.github.io/multimodal/hallu-survey/)
+  * Multimodal LLM에서의 Hallucination의 Definition, Causes, Benchmark, Mitigation 등을 정리한 글
 
 <br>
 
@@ -192,6 +194,17 @@ last_modified_at: 2024-08-13
 
 ## 1. Hallucination Evaluation
 
+* [[18' EMNLP] CHAIR: Object Hallucination in Image Captioning](https://rubato-yeong.github.io/multimodal/hallu-survey/)
+  * Object Captioning Task에서의 Object Hallucination을 측정하는 Metric을 제시함
+* [[23' EMNLP] POPE: Evaluating Object Hallucination in Large Vision-Language Models](https://rubato-yeong.github.io/multimodal/hallu-survey/)
+  * CHAIR가 Instruction 및 Generated Length에 의해 Variation이 심하다는 문제를 들어, Yes-or-No 문제로 Hallucination을 객관적으로 평가하는 Benchmark인 POPE를 제시함
+  * 세 개의 Subset random, popular, adversarial을 제시하고, 이를 통해 LMM의 Statistic Bias가 Hallucination을 유발하는 것을 확인함
+* [[23'] MME: A Comprehensive Evaluation Benchmark for Multimodal Large Language Models](https://rubato-yeong.github.io/multimodal/hallu-survey/)
+  * 크게 Perception과 Cognition을 측정하는 14개의 subtask로 구성되며, 일반적인 LMM 성능 측정을 위해 고안됨
+  * Object Hallucination을 측정하기 위해 Existence, Count, Position, Color subtask를 활용할 수 있음
+* [[23'] AMBER: An LLM-free Multi-dimensional Benchmark for MLLMs Hallucination Evaluation](https://rubato-yeong.github.io/multimodal/hallu-survey/)
+  * 오로지 Object Existence만 측정하며 단답형(Discriminative Task)으로만 구성된 POPE의 문제를 지적함
+  * Existence, Attribute, Relation을 모두 평가하며 Discriminative, Generative Task를 모두 포함한 AMBER Benchmark를 제시함
 * [[24' CVPR] HallusionBench: An Advanced Diagnostic Suite for Entangled Language Hallucination and Visual Illusion in Large Vision-Language Models](https://rubato-yeong.github.io/multimodal/hallusionbench/)
   * LMM의 Hallucination을 평가하기 위하여 Vision Dependent, Vision Supplement 질문을 제시하는 HallusionBench Benchmark를 제시함
   * LMM의 Hallucination을 Language Hallucination과 Visual Illusion으로 구분하고, 각 현상이 GPT-4V를 포함한 다양한 LMM에서 흔하게 발생한다는 것을 보여줌
