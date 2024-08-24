@@ -252,6 +252,17 @@ last_modified_at: 2024-08-13
 
 # 🕶 Mechanical Interpretability
 
+## 1. Feed-Forward Network
+
+* [[24' ICCV-WS] Multimodal Neurons in Pretrained Text-Only Transformers](https://rubato-yeong.github.io/multimodal/lmm-mmn/)
+  * Gradient-based Attribution 계산을 통해 처음으로 Multimodal Neuron을 발견하였음; Early-to-Mid Layer에서 이러한 FFN이 발견되나, 이는 Gradient-based Approach의 Bias 때문일 수 있음
+  * Image Embedding은 그대로 Text Semantic을 가지고 있는 것이 아니며, FFN의 Multimodal Neuron을 통해 이해할 수 있는 Text Semantic으로 Translation이 일어난다고 주장
+* [[24' ACL Findings] Finding and Editing Multi-Modal Neurons in Pre-Trained Transformers](https://rubato-yeong.github.io/multimodal/lmm-mmn/)
+  * LLaVA와 같은 LMM Setting에서 Forward Contribution을 통해 Multimodal Neuron을 찾아내고, Late Layer에서 더 많이 발견되는 것을 확인
+  * 이러한 Neuron의 Sensitivity, Specificity, Causal-Effect를 확인
+
+## 2. Interpretation Framework
+
 * [[24' ICLR-WS] A Concept-Based Explainability Framework for Large Multimodal Models](https://rubato-yeong.github.io/multimodal/lmm-nmf/)
   * Toy Dataset에 대해 공통 Concept Dictionary를 Semi-NMF 방법으로 찾아내고 이를 Logit Lens로 해석함
   * Layer Ablation을 통해 Intermediate to Late Layer에서 Multimodal Structure가 나타남을 확인함
