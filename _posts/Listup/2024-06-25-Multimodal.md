@@ -190,6 +190,14 @@ last_modified_at: 2024-08-13
   
 <br>
 
+# Efficient LLM
+
+* [[24'] HiRED: Attention-Guided Token Dropping for Efficient Inference of High-Resolution Vision-Language Models in Resource-Constrained Environments](https://rubato-yeong.github.io/multimodal/hired/)
+  * Visual Token 중 일부만 LMM Attention이 높은 것을 발견하고, 이를 CLIP의 `[CLS]` Token Attention으로 예측하는 Heuristic한 방법을 제안
+  * 적은 Visual Token을 사용하여 Inference Efficiency는 향상시키면서 성능은 약간 저하됨; 일부에서는 오히려 적은 Visual Token을 사용하는 것이 성능이 높게 나타남
+
+<br>
+
 # 🐍 Hallucination
 
 ## 1. Hallucination Evaluation
