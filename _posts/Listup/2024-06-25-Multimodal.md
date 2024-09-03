@@ -195,6 +195,8 @@ last_modified_at: 2024-08-13
 * [[24' ECCV] FastV: An Image is Worth 1/2 Tokens After Layer 2](https://rubato-yeong.github.io/multimodal/fastv/)
   * Visual Token의 Low Attention Efficiency를 발견하고 Deep Layer에서의 Visual Token은 Redundant할 것으로 예상함
   * 이를 통해 Early Layer에서 Visual Token을 제거하여 계산량을 줄이는 Training-free 방법론인 FastV를 제안하였고, 어느 정도까지의 Token Reduction 후에도 성능 하락이 거의 없음
+* [[24'] LLaVA-PruMerge: Adaptive Token Reduction for Efficient Large Multimodal Models](https://rubato-yeong.github.io/multimodal/prumerge/)
+  * CLIP의 `[CLS]` Token과의 Attention Score를 통해 LMM에 중요한 Image Token을 선택할 수 있다고 주장하나, 이 방법으로 수행한 PruMerge에는 한계가 있으며 Spatial Uniform Sampling을 추가한 PruMerge+에서만 성능이 유지됨
 * [[24'] HiRED: Attention-Guided Token Dropping for Efficient Inference of High-Resolution Vision-Language Models in Resource-Constrained Environments](https://rubato-yeong.github.io/multimodal/hired/)
   * Visual Token 중 일부만 LMM Attention이 높은 것을 발견하고, 이를 CLIP의 `[CLS]` Token Attention으로 예측하는 Heuristic한 방법을 제안
   * 적은 Visual Token을 사용하여 Inference Efficiency는 향상시키면서 성능은 약간 저하됨; 일부에서는 오히려 적은 Visual Token을 사용하는 것이 성능이 높게 나타남
