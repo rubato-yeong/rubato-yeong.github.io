@@ -58,13 +58,24 @@ last_modified_at: 2024-08-13
 
 # 🔮 Generative Model
 
-## 1. Instruction Tuning
+## 1. Foundation Models
+
+### LLaVA
 
 * [[23’ NIPS] LLaVA: Visual Instruction Tuning](https://rubato-yeong.github.io/multimodal/llava/)
   * Visual Instruction Tuning을 위한 LLaVA 모델을 제시함
 * [[24’ CVPR] LLaVA-1.5: Improved Baselines with Visual Instruction Tuning](https://rubato-yeong.github.io/multimodal/llava1_5/)
   * Academic task를 잘 하지 못하는 LLaVA의 단점을 data instructization으로 극복함
   * Adapter 개선, High-resolution input 사용 등의 방법을 제시함
+
+### BLIP
+
+* [[23' ICML] BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](https://rubato-yeong.github.io/multimodal/blip2/)
+  * BLIP-2는 cost-efficient한 LMM을 만들고자 하는 시도로, (1) 이미 학습된 Image Encoder와 LLM을 사용하고, (2) 여러 Objective로 분리하여 학습을 진행하여 효율성을 높임
+  * Representation Learning과 Generative Learning으로 나누어진 Two-stage 학습을 수행, 특히 Representation Learning에서는 Q-Former 구조가 도입되었으며 ITC, ITG, ITM Objective를 사용하여 학습
+* [[24'] xGen-MM (BLIP-3): A Family of Open Large Multimodal Models](https://rubato-yeong.github.io/multimodal/blip3/)
+  * xGen-MM은 BLIP-2의 문제점을 (1) 데이터의 크기와 다양성, (2) Architecture의 Scalability, (3) Training Objective의 단순화를 통해 해결함
+  * Q-Former가 아닌 Perceiver를 사용하고, High-resolution Image의 정보를 보존하기 위해 Any-Resolution Visual Token Sampling을 사용하였으며, Interleaved Dataset을 사용하여 Multi-Image Input을 제공함
 
 ## 2. Few-shot Learning
 
