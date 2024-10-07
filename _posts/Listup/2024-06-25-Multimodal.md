@@ -53,6 +53,9 @@ last_modified_at: 2024-08-13
 * [[24' ICML] Cascade-CLIP: Cascaded Vision-Language Embeddings Alignment for Zero-Shot Semantic Segmentation](https://rubato-yeong.github.io/multimodal/cascade-clip/)
   * CLIP의 Intermediate Layer가 Rich Object Detail을 포함하고 있음을 확인하고, 단순 Multi-level Feature를 합치는 것은 오히려 성능을 저하시킨다고 주장함
   * 이를 해결하기 위해 Cascaded Vision-Language Embedding Alignment과 Neighborhood Gaussian Aggregation을 제안함
+* [[24' ECCV] SCLIP: Rethinking Self-Attention for Dense Vision-Language Inference](https://rubato-yeong.github.io/multimodal/sclip/)
+  * Spatial-covariant feature를 추출하기 위해 Query-Query, Key-Key 곱으로 Attention을 계산하는 CSA를 제안함
+  * 이를 통해 Localized, Semantically Similar Feature를 잘 추출하여 Semantic Segmentation을 수행할 수 있음
 
 <br>
 
