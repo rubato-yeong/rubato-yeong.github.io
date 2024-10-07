@@ -183,6 +183,9 @@ last_modified_at: 2024-08-13
   * CLIP multi-layer fusion analysis를 통해 vision-centric task에 CLIP의 intermediate layer가 중요하다는 사실을 발견함
 * [[24'] LaSagnA: Language-based Segmentation Assistant for Complex Queries](https://rubato-yeong.github.io/multimodal/lasagna/)
   * Semantic Segmentation의 Negative Class를 Instructization에 활용하여 LISA 등의 모델의 성능을 높이는 Data Augmentation 방법을 제시함
+* [[24'] PSALM: Pixelwise SegmentAtion with Large Multi-Modal Model](https://rubato-yeong.github.io/multimodal/psalm/)
+  * Unified Segmentation을 위해 Task의 Condition을 Category, Sentence, Visual-Prior로 나누는 것을 제안하였고, 이를 동시에 학습하여 성능 개선을 이룸
+  * 다만, LLM의 Text Output을 완전히 포기하고 Feature Encoder로만 사용하여 Conversation 능력을 갖추지 못함
 * [[24'] F-LMM: Grounding Frozen Large Multimodal Models](https://rubato-yeong.github.io/multimodal/f-lmm/)
   * Frozen LLM의 Attention Map을 사용해 Segmentation Map을 생성하는 F-LMM 모델을 제시함
   * 기존의 Grounding-Chat Trade-off 문제를 해결하고, LLM의 Conversation 능력이 좋을수록 Grounding 능력도 좋을 수 있다는 것을 보여줌
