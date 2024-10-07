@@ -50,6 +50,9 @@ last_modified_at: 2024-08-13
 * [[23' CVPR] ZegCLIP: Towards Adapting CLIP for Zero-shot Semantic Segmentation](https://rubato-yeong.github.io/multimodal/zegclip/)
   * 기존 CLIP 기반 two-stage framework가 CLIP의 zero-shot ability를 온전히 활용하지 못한다는 문제점을 지적하고, 이를 해결하기 위해 CLIP의 zero-shot prediction을 pixel level로 확장하는 ZegCLIP 모델을 제시함
   * 직관적인 one-stage framework에 DPT(Deep Prompt Tuning), Non-mutually Exclusive Loss (NEL), Relationship Descriptor (RD)라는 세 가지 기법을 적용하여 성능을 two-stage framework 수준보다 높게 끌어올림
+* [[23' CVPR] ZS-RS: Zero-Shot Referring Image Segmentation With Global-Local Context Features](https://rubato-yeong.github.io/multimodal/zs-rs/)
+  * 최초로 CLIP에서 Zero-shot Referring Image Segmentation을 시도함
+  * Off-the-shelf Mask Extractor를 이용하여 Mask를 추출한 뒤, Global-Local Context Features를 이용하여 Segmentation을 수행함
 * [[24' ICML] Cascade-CLIP: Cascaded Vision-Language Embeddings Alignment for Zero-Shot Semantic Segmentation](https://rubato-yeong.github.io/multimodal/cascade-clip/)
   * CLIP의 Intermediate Layer가 Rich Object Detail을 포함하고 있음을 확인하고, 단순 Multi-level Feature를 합치는 것은 오히려 성능을 저하시킨다고 주장함
   * 이를 해결하기 위해 Cascaded Vision-Language Embedding Alignment과 Neighborhood Gaussian Aggregation을 제안함
