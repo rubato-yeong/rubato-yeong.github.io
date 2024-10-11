@@ -11,7 +11,7 @@ toc: true
 toc_sticky: true
  
 date: 2024-06-25
-last_modified_at: 2024-08-13
+last_modified_at: 2024-10-11
 ---
 
 # 🎩 Survey
@@ -23,46 +23,7 @@ last_modified_at: 2024-08-13
 
 <br>
 
-# ⏱ Early Works
-
-* [[21’ ICML] VL-T5: Unifying Vision-and-Language Tasks via Text Generation](https://rubato-yeong.github.io/multimodal/vlt5/)
-  * Vision information을 text token으로 전환하는 구조의 multi-task unified framework를 제시함
-
-<br>
-
-# 🧷 Contrastive Model
-
-## 1. Vision-Language Alignment
-
-* [[21’ ICML] CLIP: Learning Transferable Visual Models From Natural Language Supervision](https://rubato-yeong.github.io/multimodal/clip/)
-  * CLIP(Contrastive Language-Image Pre-training) 모델을 제시함
-
-## 2. Segmentation
-
-* [[22' ECCV] MaskCLIP: Extract Free Dense Labels from CLIP](https://rubato-yeong.github.io/multimodal/maskclip/)
-  * MaskCLIP은 학습 없이 CLIP Last Layer Feature Map으로부터 Dense Label을 추출하고, 이를 다듬는 (1) Key Smoothing과 (2) Prompt Denoising 기법을 제시함
-  * MaskCLIP+는 Pseudo Labeling과 Self-training을 통해 MaskCLIP의 성능을 더 개선시킴
-* [[22' ECCV] Zsseg: A Simple Baseline for Open-Vocabulary Semantic Segmentation with Pre-trained Vision-Language Model](https://rubato-yeong.github.io/multimodal/zegclip/)
-  * CLIP은 Image 전체에 대한 정보를 추출하는 반면 Segmentation Task는 Pixel 단위로 한다는 점을 지적하며 Mask Proposal Model을 사용하여 Region Proposal을 제시하고, 이를 CLIP을 이용하여 Zero-shot Classification을 수행하는 Two-stage framework를 제시함
-* [[22' CVPR] ZegFormer: Decoupling Zero-Shot Semantic Segmentation](https://rubato-yeong.github.io/multimodal/zegclip/)
-  * 기존의 Pixel-level Segmentation은 Seen object와 Unseen object의 의미를 잘 통합하지 못한다는 문제점을 지적함
-  * ZS3(Zero-Shot Semantic Segmentation)을 (1) Class-agnostic Grouping과 (2) Segment-level Zero-shot Classification 문제로 분리하여 해결하는 방법을 제시함
-* [[23' CVPR] ZegCLIP: Towards Adapting CLIP for Zero-shot Semantic Segmentation](https://rubato-yeong.github.io/multimodal/zegclip/)
-  * 기존 CLIP 기반 two-stage framework가 CLIP의 zero-shot ability를 온전히 활용하지 못한다는 문제점을 지적하고, 이를 해결하기 위해 CLIP의 zero-shot prediction을 pixel level로 확장하는 ZegCLIP 모델을 제시함
-  * 직관적인 one-stage framework에 DPT(Deep Prompt Tuning), Non-mutually Exclusive Loss (NEL), Relationship Descriptor (RD)라는 세 가지 기법을 적용하여 성능을 two-stage framework 수준보다 높게 끌어올림
-* [[23' CVPR] ZS-RS: Zero-Shot Referring Image Segmentation With Global-Local Context Features](https://rubato-yeong.github.io/multimodal/zs-rs/)
-  * 최초로 CLIP에서 Zero-shot Referring Image Segmentation을 시도함
-  * Off-the-shelf Mask Extractor를 이용하여 Mask를 추출한 뒤, Global-Local Context Features를 이용하여 Segmentation을 수행함
-* [[24' ICML] Cascade-CLIP: Cascaded Vision-Language Embeddings Alignment for Zero-Shot Semantic Segmentation](https://rubato-yeong.github.io/multimodal/cascade-clip/)
-  * CLIP의 Intermediate Layer가 Rich Object Detail을 포함하고 있음을 확인하고, 단순 Multi-level Feature를 합치는 것은 오히려 성능을 저하시킨다고 주장함
-  * 이를 해결하기 위해 Cascaded Vision-Language Embedding Alignment과 Neighborhood Gaussian Aggregation을 제안함
-* [[24' ECCV] SCLIP: Rethinking Self-Attention for Dense Vision-Language Inference](https://rubato-yeong.github.io/multimodal/sclip/)
-  * Spatial-covariant feature를 추출하기 위해 Query-Query, Key-Key 곱으로 Attention을 계산하는 CSA를 제안함
-  * 이를 통해 Localized, Semantically Similar Feature를 잘 추출하여 Semantic Segmentation을 수행할 수 있음
-
-<br>
-
-# 🔮 Generative Model
+# 🔮 Architecture
 
 ## 1. Foundation Models
 
@@ -95,6 +56,8 @@ last_modified_at: 2024-08-13
 
 ## 3. Visual Encoder & Adapter
 
+* [[21’ ICML] VL-T5: Unifying Vision-and-Language Tasks via Text Generation](https://rubato-yeong.github.io/multimodal/vlt5/)
+  * Vision information을 text token으로 전환하는 구조의 multi-task unified framework를 제시함
 * [[24’ ICLR] LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention](https://rubato-yeong.github.io/language/llama-adapter/)
   * LLaMA에 적용 가능한 Vision-conditioned Prefix Tuning 방법을 제시함
 * [[23'] LLaMA-Adapter V2: Parameter-Efficient Visual Instruction Model](https://rubato-yeong.github.io/multimodal/llama-adapter-v2/)
@@ -168,6 +131,7 @@ last_modified_at: 2024-08-13
   * Lightweight pixel decoder와 segmentation codebook을 이용해 LISA 구조에서 multiple target segmentation이 가능하도록 함
 * [[24’ CVPR] GSVA: Generalized Segmentation via Multimodal Large Language Models](https://rubato-yeong.github.io/multimodal/gsva/)
   * LISA에서 GRES Task를 풀기 위해 여러 개의 `<SEG>` token과 `<REJ>` token을 사용할 것을 제안함
+  * LISA와 같은 LLM-aided segmentation에서의 In-context Learning의 효과를 발견함
 * [[24’ CVPR] GLaMM: Pixel Grounding Large Multimodal Model](https://rubato-yeong.github.io/multimodal/glamm/)
   * GCG(Grounded Conversation Generation) Task를 제안하고, Visual Prompt를 Input으로 이용할 수 있는 확장된 LISA 모델을 제안함
   * SA-1B dataset을 재가공하여 GCG task에 맞는 거대 데이터셋인 GranD dataset(11M)을 제작함
@@ -189,18 +153,6 @@ last_modified_at: 2024-08-13
 * [[24'] F-LMM: Grounding Frozen Large Multimodal Models](https://rubato-yeong.github.io/multimodal/f-lmm/)
   * Frozen LLM의 Attention Map을 사용해 Segmentation Map을 생성하는 F-LMM 모델을 제시함
   * 기존의 Grounding-Chat Trade-off 문제를 해결하고, LLM의 Conversation 능력이 좋을수록 Grounding 능력도 좋을 수 있다는 것을 보여줌
-
-### Referring Segmentation
-
-* [[22' CVPR] LAVT: Language-Aware Vision Transformer for Referring Image Segmentation](https://rubato-yeong.github.io/multimodal/unilseg/)
-  * Visual Encoder에 Language Attention을 주어 Language-Vision Interaction을 강화하여 RIS Task를 해결함
-* [[23' CVPR] OVSeg: Open-Vocabulary Semantic Segmentation with Mask-adapted CLIP](https://rubato-yeong.github.io/multimodal/unilseg/)
-  * CLIP과 Mask Prompt Tuning을 사용하여 Open-Vocabulary Semantic Segmentation Task를 해결함
-* [[23’ CVPR] GRES: Generalized Referring Expression Segmentation](https://rubato-yeong.github.io/multimodal/gres/)
-  * Multi-target, Empty-target expression에 대해 대답해야 하는 GRES Task를 제안하고 이를 해결하기 위한 ReLA 모델을 제시함
-  * LISA와 같은 LLM-aided segmentation에서의 In-context Learning의 효과를 발견함
-* [[24’ CVPR] UniLSeg: Universal Segmentation at Arbitrary Granularity with Language Instruction](https://rubato-yeong.github.io/multimodal/unilseg/)
-  * Various granularity에서 모두 segmentation할 수 있는 universal segmentation model을 제안함
 
 ### Few-shot Segmentation
 

@@ -3,9 +3,9 @@ title:  "[24' ICML] Cascade-CLIP: Cascaded Vision-Language Embeddings Alignment 
 excerpt: ""
 
 categories:
-  - Multimodal
+  - Vision
 tags:
-  - [Contrastive Learning, Zero-shot Segmentation]
+  - [Contrastive Learning, Semantic Segmentation]
 
 toc: true
 toc_sticky: true
