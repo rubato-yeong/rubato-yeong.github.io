@@ -267,6 +267,10 @@ last_modified_at: 2024-10-11
 
 ## 2. Inner Workings
 
+* [[24'] Towards Interpreting Visual Information Processing in Vision-Language Models](https://rubato-yeong.github.io/multimodal/llava-interp/)
+  * Visual Token Ablation을 통해 Object 정보는 해당 Token Position에 Localized되어 있음을 보임
+  * Logit Lens를 통해 Visual Token이 Late Layer에서 Vocabulary에 있는 Interpretable Token Embedding으로 Mapping되는 것을 보임
+  * Attention Knockout을 통해 Middle-to-Late Layer에서 Object Visual Token으로부터 Text Token으로의 Attention Flow가 일어남을 밝힘
 * [[24'] Intriguing Properties of Large Language and Vision Models](https://rubato-yeong.github.io/multimodal/intriguing/)
   * Visual Token은 Localized Information을 가지고 있으며 어느 정도 Permutation-invariant함
   * Early Layer에서 Visual Information Processing이 일어나고, 이후에는 Text Interpretation이 더 중요하다고 주장함
