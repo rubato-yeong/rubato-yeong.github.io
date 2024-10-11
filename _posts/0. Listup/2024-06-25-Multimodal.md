@@ -267,6 +267,10 @@ last_modified_at: 2024-10-11
 
 ## 2. Inner Workings
 
+* [[24'] Interpreting and Editing Vision-Language Representations to Mitigate Hallucinations](https://rubato-yeong.github.io/multimodal/vl-interp/)
+  * LVLM의 Internal Image Representation은 Language Vocabulary에 대응되며, Real Object가 Hallcinated Object보다 Internal Confidence가 높음
+  * LVLM의 Visual Token에서 Hallucinated Object를 지우는 $\textsf{PROJECTAWAY}$를 통해 Object Hallucination을 Mitigation하도록 함
+  * Internal Confidence를 일정 Threshold로 설정하여 Zero-shot Image Segmentation을 수행할 수 있음을 보임
 * [[24'] Towards Interpreting Visual Information Processing in Vision-Language Models](https://rubato-yeong.github.io/multimodal/llava-interp/)
   * Visual Token Ablation을 통해 Object 정보는 해당 Token Position에 Localized되어 있음을 보임
   * Logit Lens를 통해 Visual Token이 Late Layer에서 Vocabulary에 있는 Interpretable Token Embedding으로 Mapping되는 것을 보임
@@ -280,6 +284,9 @@ last_modified_at: 2024-10-11
 * [[24' ICLR-WS] A Concept-Based Explainability Framework for Large Multimodal Models](https://rubato-yeong.github.io/multimodal/lmm-nmf/)
   * Toy Dataset에 대해 공통 Concept Dictionary를 Semi-NMF 방법으로 찾아내고 이를 Logit Lens로 해석함
   * Layer Ablation을 통해 Intermediate to Late Layer에서 Multimodal Structure가 나타남을 확인함
+* [[24' CVPR-WS] LVLM-Intrepret: An Interpretability Tool for Large Vision-Language Models](https://openaccess.thecvf.com/content/CVPR2024W/XAI4CV/html/Stan_LVLM-Intrepret_An_Interpretability_Tool_for_Large_Vision-Language_Models_CVPRW_2024_paper.html)
+  * Attention Map, Relevancy Map, Causal Interpretation을 시각화하여 LVLM의 Inner Workings을 이해할 수 있는 Tool을 제시함
+  * LVLM의 Failure Case를 분석하여 Text Prioritization 문제를 확인함
 
 <br>
 
