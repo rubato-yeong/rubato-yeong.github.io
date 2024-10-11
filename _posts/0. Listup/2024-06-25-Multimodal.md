@@ -175,6 +175,9 @@ last_modified_at: 2024-10-11
 * [[24'] HiRED: Attention-Guided Token Dropping for Efficient Inference of High-Resolution Vision-Language Models in Resource-Constrained Environments](https://rubato-yeong.github.io/multimodal/hired/)
   * Visual Token 중 일부만 LMM Attention이 높은 것을 발견하고, 이를 CLIP의 `[CLS]` Token Attention으로 예측하는 Heuristic한 방법을 제안
   * 적은 Visual Token을 사용하여 Inference Efficiency는 향상시키면서 성능은 약간 저하됨; 일부에서는 오히려 적은 Visual Token을 사용하는 것이 성능이 높게 나타남
+* [[24'] Quadratic Is Not What You Need For Multimodal Large Language Models](https://rubato-yeong.github.io/multimodal/layercut/)
+  * LMM에서 Visual Token 간의 Attention을 제거하고, Visual Token을 계산하는 Layer를 줄이는 방법, 각각 AttnCut과 LayerCut을 제안하여 Quadratic Complexity를 줄이면서도 성능을 유지할 수 있음을 보임
+  * Lower-level Layer에서만 MLLM이 Vision-Language 간 Modality Gap을 줄여 Interaction이 일어나고, Higher-level Layer에서는 Complex Visual Reasoning에 Visual Modality가 잘 고려되지 않고 대신 Language Modality에 의해 계산이 이루어지는 것이 효율적이라는 가설을 제시
 
 <br>
 
@@ -262,7 +265,13 @@ last_modified_at: 2024-10-11
   * LLaVA와 같은 LMM Setting에서 Forward Contribution을 통해 Multimodal Neuron을 찾아내고, Late Layer에서 더 많이 발견되는 것을 확인
   * 이러한 Neuron의 Sensitivity, Specificity, Causal-Effect를 확인
 
-## 2. Interpretation Framework
+## 2. Inner Workings
+
+* [[24'] Intriguing Properties of Large Language and Vision Models](https://rubato-yeong.github.io/multimodal/intriguing/)
+  * Visual Token은 Localized Information을 가지고 있으며 어느 정도 Permutation-invariant함
+  * Early Layer에서 Visual Information Processing이 일어나고, 이후에는 Text Interpretation이 더 중요하다고 주장함
+
+## 3. Interpretation Framework
 
 * [[24' ICLR-WS] A Concept-Based Explainability Framework for Large Multimodal Models](https://rubato-yeong.github.io/multimodal/lmm-nmf/)
   * Toy Dataset에 대해 공통 Concept Dictionary를 Semi-NMF 방법으로 찾아내고 이를 Logit Lens로 해석함
