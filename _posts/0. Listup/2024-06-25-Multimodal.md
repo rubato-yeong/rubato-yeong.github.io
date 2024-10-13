@@ -264,6 +264,10 @@ last_modified_at: 2024-10-11
 * [[24' ACL Findings] Finding and Editing Multi-Modal Neurons in Pre-Trained Transformers](https://rubato-yeong.github.io/multimodal/lmm-mmn/)
   * LLaVA와 같은 LMM Setting에서 Forward Contribution을 통해 Multimodal Neuron을 찾아내고, Late Layer에서 더 많이 발견되는 것을 확인
   * 이러한 Neuron의 Sensitivity, Specificity, Causal-Effect를 확인
+* [[24' EMNLP] MMNeuron: Discovering Neuron-Level Domain-Specific Interpretation in Multimodal Large Language Model](https://rubato-yeong.github.io/multimodal/mmneuron/)
+  * MLLM의 Domain-specific Neuron을 찾고, Domain-specific Information을 잘 활용하지 못하는 Gap이 존재한다고 주장함
+  * MLLM이 Image, Text를 처리하는 3-Stage Mechanism을 제안하였으나, 이에 대한 근거는 부족함
+  * Visual Feature를 Logit Lens로 Decoding하여 Semantic Concept이 드러난다는 것을 간접적으로 확인하였으나, 명확한 결과는 얻지 못함
 
 ## 2. Inner Workings
 
