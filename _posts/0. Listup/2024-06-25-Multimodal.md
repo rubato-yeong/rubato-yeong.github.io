@@ -300,6 +300,9 @@ last_modified_at: 2024-10-11
   * 따라서 Multitask-ICL, Chain-of-Hindsight-ICL, Self-Correcting-ICL을 제안하고, 이러한 방법들로 Abstention, Explanability 등을 개선시킬 수 있음을 보여줌
 * [[24' ICML] Fool Your (Vision and) Language Model With Embarrassingly Simple Permutations](https://rubato-yeong.github.io/multimodal/adv-permutation/)
   * MCQA(Multiple-Choice Question Answering) 상황에서 LLM과 VLLM이 Permutation에 굉장히 취약하며, 이는 Position Bias, Distractor Pattern, Symbol-Content Spurious Correlation 등의 요소로 인해 발생함
+* [[24' ECCV] BLINK: Multimodal Large Language Models Can See but Not Perceive](https://rubato-yeong.github.io/multimodal/blink/)
+  * BLINK는 MLLM의 Perception 능력을 평가하는 Benchmark로, Recognition 능력만 평가하는 Benchmark와 차별화함
+  * 아직 MLLM은 Crop 및 Pixel Level Task를 잘 해결하지 못하는 Visual Perception Gap을 가지고 있으며, 이를 Specialist Model의 능력을 Distillation하여 해결할 수 있을 것으로 제안함
 
 <br>
 
