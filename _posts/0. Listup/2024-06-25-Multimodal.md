@@ -83,6 +83,9 @@ last_modified_at: 2024-10-11
   * Data Distribution이 Instruction Tuning에 중요하다는 것을 확인하고, 이를 조정한 Cambrian-7M 데이터셋을 제작; 또한 System Prompting을 통해 Condition을 주고 Instruction Tuning을 진행하는 것이 중요하다는 것을 확인함
 * [[24' ACL] Cross-Modal Projection in Multimodal LLMs Doesn’t Really Project Visual Attributes to Textual Space](https://rubato-yeong.github.io/multimodal/cross-modal/)
   * MLLM의 Projector는 LLM Parameter가 Domain-specific Attribute를 더 잘 활용할 수 있도록 Feature를 Align하는 역할을 하며, 실제 Visual Attribute를 처리하는 능력은 LLM에 달려 있다고 주장
+* [[24' EMNLP] TroL: Traversal of Layers for Large Language and Vision Models](https://rubato-yeong.github.io/multimodal/trol/)
+  * TroL은 Layer Traversal을 통해 동일한 Layer를 여러 번 재사용하여 파라미터를 효율적으로 사용함
+  * Early Layer에서 Layer의 재사용이 활발히 일어나는 것으로 보아 Early Layer의 중요성과 Early Alignment의 필요성을 확인할 수 있음
 
 <br>
 
