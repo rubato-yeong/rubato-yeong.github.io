@@ -81,6 +81,8 @@ last_modified_at: 2024-10-11
   * 지금까지의 MLLM Benchmark가 MLLM의 성능을 잘 평가하지 못한다고 지적하며, Vision-centric Benchmark인 CV-Bench를 제안함
   * Vision Encoder Unfreezing, Vision Encoder Ensemble을 통해 성능이 향상되는 것을 확인하고, DINOv2와 ConvNeXt의 의미를 재확인함; 더 나아가 Spatial Vision Aggregator(SVA)를 제안하여 여러 Vision Encoder의 Feature를 효율적으로 종합하는 방법을 제안
   * Data Distribution이 Instruction Tuning에 중요하다는 것을 확인하고, 이를 조정한 Cambrian-7M 데이터셋을 제작; 또한 System Prompting을 통해 Condition을 주고 Instruction Tuning을 진행하는 것이 중요하다는 것을 확인함
+* [[24' ACL] Cross-Modal Projection in Multimodal LLMs Doesn’t Really Project Visual Attributes to Textual Space](https://rubato-yeong.github.io/multimodal/cross-modal/)
+  * MLLM의 Projector는 LLM Parameter가 Domain-specific Attribute를 더 잘 활용할 수 있도록 Feature를 Align하는 역할을 하며, 실제 Visual Attribute를 처리하는 능력은 LLM에 달려 있다고 주장
 
 <br>
 
